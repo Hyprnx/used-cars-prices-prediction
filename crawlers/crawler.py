@@ -36,11 +36,3 @@ class Crawler(BaseClass):
     def finish(self):
         # self.crawl()
         raise NotImplementedError
-
-def main():
-    # test run
-    cr = Crawler()
-    print(cr.cnt_crawled_items)
-
-if __name__ == '__main__':
-    main()
