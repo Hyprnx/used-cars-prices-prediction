@@ -32,13 +32,52 @@ SCHEMA_USED_CARS = {
         "source_url": {
             "type": "string"
         },
-        "contacts": SCHEMA_CONTACTS
+        "contacts": SCHEMA_CONTACTS,
+        'origin':{
+            'type': 'string'
+        },
+        'km_driven':{
+            'type': 'number'
+        },
+        'internal_color':{
+            'type': 'string'
+        },
+        'external_color': {
+            'type': 'string'
+        },
+        'seats':{
+            'type': 'integer'
+        },
+        'engine_capacity':{
+            'type': 'number'
+        },
+        'fuel':{
+            'type': 'string'
+        #    Gasoline or Diesel
+        },
+        'transmission': {
+            'type': 'string'
+        #    Manual or Automatic
+        },
+        'wheel_drive':{
+            'type': 'string'
+        },
+
+
+
     },
     "required": [
-        "id",
         "name",
-        "source",
         "source_url",
-        "contacts"
+        "contacts",
+        "origin",
+        "km_driven",
+        "internal_color",
+        "external_color",
+        "seats",
+        "engine_capacity",
+        "fuel",
+        "transmission",
+        "wheel_drive"
     ]
 }

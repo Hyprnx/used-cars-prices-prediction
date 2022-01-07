@@ -49,7 +49,7 @@ def main():
     }
 
     validator = ValidateUsedCars()
-    print('Validate used car result:', validator.validate(cars_sample)[0])
+    print('Validate used car result:', validator.validate(cars_sample))
 
 
 if __name__ == '__main__':
