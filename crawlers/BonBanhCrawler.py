@@ -22,9 +22,11 @@ class BonBanhCrawler(Crawler):
         self.path = 'C:\\Users\\toduc\\Downloads\\chromedriver_win32\\chromedriver.exe' # change path when use on your machine
         options = Options()
         options.headless = True
+        self.log.info('Initializing Selenium')
         self.driver = Chrome(executable_path=self.path, options=options)
         self.url = 'https://bonbanh.com/'
         self.source = 'https://bonbanh.com/'
+        self.log.info('Connecting to %s' %self.source)
         self.driver.get(self.url)
         req = self.driver.page_source
         self.soup = BeautifulSoup(req, 'lxml')
@@ -50,8 +52,6 @@ def main():
     cr = BonBanhCrawler()
     for i in cr._get_brand():
         print(i)
-
-
 
 if __name__ == '__main__':
     main()
