@@ -20,6 +20,7 @@ chromeOptions.headless = True
 proxy = Proxy()
 proxy.proxyType = ProxyType.MANUAL
 proxy.autodetect = False
+
 proxy.httpProxy = proxy.sslProxy = proxy.socksProxy = "171.251.22.154:5001"
 chromeOptions.Proxy = proxy
 chromeOptions.add_argument("ignore-certificate-errors")
