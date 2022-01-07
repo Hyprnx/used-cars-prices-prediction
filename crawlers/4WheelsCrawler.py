@@ -16,7 +16,6 @@ import csv
 
 chromeOptions = Options()
 chromeOptions.headless = True
-
 proxy = Proxy()
 proxy.proxyType = ProxyType.MANUAL
 proxy.autodetect = False
