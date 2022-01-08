@@ -1,11 +1,24 @@
 from crawlers.crawler import Crawler
 from bs4 import BeautifulSoup
+from base import BaseClass
+from common.text_normalizer import normalized
 import requests
+import os
+from pprint import pprint
 import selenium
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 
 from selenium.webdriver.common.keys import Keys
+
+
+def is_file_empty(file_path):
+    """ Check if file is empty by confirming if its size is 0 bytes"""
+    # Check if file exist and it is empty
+
+    return os.path.isfile(file_path) and os.path.getsize(file_path) == 0
+
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) "
@@ -15,6 +28,46 @@ HEADERS = {
     "Connection": "keep-alive",
     "Cache-Control": "max-age=0"
 }
+
+
+class BonBanhUsedCarCrawler(BaseClass):
+    def __init__(self, url):
+        super().__init__()
+        self.url = url
+        self.log.info('Crawling %s' %self.url)
+        req = requests.get(self.url, headers=HEADERS).text
+        self.soup = BeautifulSoup(req, 'lxml')
+
+    def crawl(self):
+        name_selector = '#car_detail > div.title > h1'
+        name = normalized(self.soup.select(name_selector)[0].text)
+        container_selector = '#mail_parent > div.txt_input > span'
+        container = self.soup.select(container_selector)
+        origin = container[0].text
+        km_driven = container[3].text.split(" ")[0]
+        external_color = container[4].text
+        internal_color = container[5].text
+        seats = container[6].text.split(' ')[0]
+        fuels_and_engine_capacity_container = container[7].text.split("\t")
+        fuels = fuels_and_engine_capacity_container[0]
+        engine_capacity = fuels_and_engine_capacity_container[1].split(' ')[0]
+        transmission = container[9].text
+        wheel_drive = container[10].text.split(' ')[0]
+        car = {
+            'name' : name,
+            'origin' : origin,
+            'km_driven' : km_driven,
+            'external_color': external_color,
+            'internal_color': internal_color,
+            'seats' : seats,
+            'fuels' : fuels,
+            'engine_capacity' : engine_capacity,
+            'transmission': transmission,
+            'wheel_drive': wheel_drive
+        }
+
+        return car
+
 
 class BonBanhCrawler(Crawler):
     def __init__(self):
@@ -33,46 +86,86 @@ class BonBanhCrawler(Crawler):
 
 
     def _get_brand(self):
-        selector = '#primary-nav'
-        brands = []
-        transparent_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class':"menuparent", 'style':"z-index:999;"})
-        hidden_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class':"menuparent add_menu"})
-        for brand_container in transparent_brands_container:
-            brand = brand_container.find('a')['href']
-            brands.append(self.source + brand)
-        for brand_container in hidden_brands_container:
-            brand = brand_container.find('span')['url']
-            brands.append(self.source + brand)
-        return brands
+        file_path = 'data/brands_link.txt'
+        self.log.info('Trying to open brands file at %s' %file_path)
+        if is_file_empty(file_path):
+            with open(file_path, 'w') as file:
+                self.log.info('File is empty, crawling brands...')
+                selector = '#primary-nav'
+                brands = []
+                transparent_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class':"menuparent", 'style':"z-index:999;"})
+                hidden_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class':"menuparent add_menu"})
+                for brand_container in transparent_brands_container:
+                    brand = brand_container.find('a')['href']
+                    brands.append(self.source + brand)
+                for brand_container in hidden_brands_container:
+                    brand = brand_container.find('span')['url']
+                    brands.append(self.source + brand)
+                file.write('\n'.join(brands))
+                return brands
+        self.log.info('Successfully opened file, getting brands from file')
+        with open(file_path, 'r') as file:
+            brands = file.readlines()
+            return brands
+
+    def _get_cars_link(self):
+        file_path = 'data/cars_links.txt'
+        self.log.info('Trying to open brands file at %s' %file_path)
+        if is_file_empty(file_path):
+            with open(file_path, 'w') as file:
+                self.log.info('File is empty, crawling brands...')
+                used_car_links = []
+                black_list = ['https://bonbanh.com/oto/brilliance'] # brands that have no cars selling
+                links = self._get_brand()
+                for link in links[1:]:
+                    if link in black_list:
+                        continue
+                    self.log.info("Getting used car's links from %s" %link)
+                    self.driver.get(link)
+                    req = self.driver.page_source
+                    soup = BeautifulSoup(req, 'html.parser')
+                    last_page_selector = '#s-list-car > div > div.pagging > div.navpage > div'
+                    last_page_container = soup.select(last_page_selector)[0]
+                    last_page_container = last_page_container.find_all('span')
+                    link = link.split('\n')[0]
+                    last_page = int(last_page_container[-1]['url'][len(link + '/page,'):])
+                    pages = [link + '/page,' + str(i) for i in range(1,last_page + 1)]
+
+                    for link in pages:
+                        self.log.info("Getting used car's links from %s" %link)
+                        # append car's links to list
+                        req = requests.get(link, headers=HEADERS).text
+                        soup = BeautifulSoup(req, 'lxml')
+                        table_container_selector = '#s-list-car > div > ul'
+                        table = soup.select(table_container_selector)[0]
+                        lis_tag = table.find_all('li', attrs={'itemtype': "http://schema.org/Car"})
+                        for li_tag in lis_tag:
+                            a_tag = li_tag.find('a')['href']
+                            print(self.source + a_tag)
+                            used_car_links.append(self.source + a_tag)
+
+                file.write('\n'.join(used_car_links))
+                return used_car_links
+
+        self.log.info('Successfully opened file, getting cars links from file')
+        with open(file_path, 'r') as file:
+            cars_links = file.readlines()
+            return cars_links
+
 
     def soup(self):
         return self.soup().prettify()
 
+
+
 def main():
     cr = BonBanhCrawler()
-    for i in cr._get_brand():
-        print(i)
+    cr._get_cars_link()
+
+#     link = 'https://bonbanh.com/xe-bmw-x6-xdrive40i-m-sport-2020-4007031'
+#     car = BonBanhUsedCarCrawler(link)
+#     pprint(car.crawl())
+
 
 if __name__ == '__main__':
     main()
-    # Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    #
-    # Why do we use it?
-    # It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-    #
-    #
-    # Where does it come from?
-    # Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-    #
-    # The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-    #
-    # Where can I get some?
-    # There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-    #
-    # 5
-    # 	paragraphs
-    # 	words
-    # 	bytes
-    # 	lists
-    # 	Start with 'Lorem
-    # ipsum dolor sit amet...'

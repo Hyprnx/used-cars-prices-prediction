@@ -63,16 +63,12 @@ SCHEMA_USED_CARS = {
             'type': 'string'
         },
 
-
-
     },
     "required": [
         "name",
         "source_url",
-        "contacts",
         "origin",
         "km_driven",
-        "internal_color",
         "external_color",
         "seats",
         "engine_capacity",
