@@ -62,6 +62,12 @@ SCHEMA_USED_CARS = {
         'wheel_drive':{
             'type': 'string'
         },
+        'price':{
+            'type': 'number'
+        },
+        'year': {
+            'type': 'number'
+        },
 
     },
     "required": [
@@ -74,6 +80,8 @@ SCHEMA_USED_CARS = {
         "engine_capacity",
         "fuel",
         "transmission",
-        "wheel_drive"
+        "wheel_drive",
+        "price",
+        "year"
     ]
 }

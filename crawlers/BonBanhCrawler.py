@@ -9,8 +9,8 @@ import selenium
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
-
 from selenium.webdriver.common.keys import Keys
+from time import sleep
 
 
 def is_file_empty(file_path):
@@ -108,6 +108,22 @@ class BonBanhCrawler(Crawler):
             brands = file.readlines()
             return brands
 
+    def _check_black_list(self, link):
+        black_list = [
+            'https://bonbanh.com/oto/brilliance',
+            'https://bonbanh.com/oto/datsun',
+            'https://bonbanh.com/oto/gaz',
+            'https://bonbanh.com/oto/lada',
+            'https://bonbanh.com/oto/maybach',
+            'https://bonbanh.com/oto/mercury',
+            'https://bonbanh.com/oto/pontiac',
+            'https://bonbanh.com/oto/rover'
+            ]  # brands that have no cars selling
+
+        validate_link = link.split('\n')[0]
+        return validate_link in black_list
+
+
     def _get_cars_link(self):
         file_path = 'data/cars_links.txt'
         self.log.info('Trying to open brands file at %s' %file_path)
@@ -115,22 +131,24 @@ class BonBanhCrawler(Crawler):
             with open(file_path, 'w') as file:
                 self.log.info('File is empty, crawling brands...')
                 used_car_links = []
-                black_list = ['https://bonbanh.com/oto/brilliance'] # brands that have no cars selling
                 links = self._get_brand()
-                for link in links[1:]:
-                    if link in black_list:
+                for link in links:
+                    if self._check_black_list(link):
+                        self.log.info('skipping link in blacklist %s' %link)
                         continue
                     self.log.info("Getting used car's links from %s" %link)
                     self.driver.get(link)
                     req = self.driver.page_source
                     soup = BeautifulSoup(req, 'html.parser')
-                    last_page_selector = '#s-list-car > div > div.pagging > div.navpage > div'
-                    last_page_container = soup.select(last_page_selector)[0]
-                    last_page_container = last_page_container.find_all('span')
-                    link = link.split('\n')[0]
-                    last_page = int(last_page_container[-1]['url'][len(link + '/page,'):])
-                    pages = [link + '/page,' + str(i) for i in range(1,last_page + 1)]
-
+                    try:
+                        last_page_selector = '#s-list-car > div > div.pagging > div.navpage > div'
+                        last_page_container = soup.select(last_page_selector)[0]
+                        last_page_container = last_page_container.find_all('span')
+                        link = link.split('\n')[0]
+                        last_page = int(last_page_container[-1]['url'][len(link + '/page,'):])
+                        pages = [link + '/page,' + str(i) for i in range(1,last_page + 1)]
+                    except KeyError:
+                        pages = [link]
                     for link in pages:
                         self.log.info("Getting used car's links from %s" %link)
                         # append car's links to list
@@ -143,6 +161,7 @@ class BonBanhCrawler(Crawler):
                             a_tag = li_tag.find('a')['href']
                             print(self.source + a_tag)
                             used_car_links.append(self.source + a_tag)
+                        sleep(1)
 
                 file.write('\n'.join(used_car_links))
                 return used_car_links
@@ -161,10 +180,6 @@ class BonBanhCrawler(Crawler):
 def main():
     cr = BonBanhCrawler()
     cr._get_cars_link()
-
-#     link = 'https://bonbanh.com/xe-bmw-x6-xdrive40i-m-sport-2020-4007031'
-#     car = BonBanhUsedCarCrawler(link)
-#     pprint(car.crawl())
 
 
 if __name__ == '__main__':
