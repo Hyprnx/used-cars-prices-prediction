@@ -1,0 +1,362 @@
+brand,model,date,km_driven,transmission,fuel,type,seats,price,url
+Mitsubishi,Xpander,2020,29000,Automatic,Gasoline,Hatchback,7,515.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-bien-hoa-dong-nai/89487078.htm#px=SR-stickyad-[PO-1][PL-top]
+Kia,Rio,2004,82890,Automatic,Gasoline,Sedan,5,172.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-khe-da-nang/90821688.htm
+Hyundai,Accent,2019,32000,Manual,Gasoline,Sedan,5,355.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448258.htm
+Daewoo,Matiz,2007,7656,Automatic,Gasoline,Hatchback,5,125.000.000,https://xe.chotot.com/mua-ban-oto-huyen-gia-lam-ha-noi/89981329.htm
+Hyundai,Accent,2020,7000,Automatic,Gasoline,Sedan,5,540.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448230.htm
+Toyota,Innova,2019,8000,Manual,Gasoline,Minivan (MPV),8,565.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91175428.htm
+Hyundai,Accent,2018,38000,Automatic,Gasoline,Sedan,5,475.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/89712607.htm
+Toyota,Fortuner,2021,21000,Automatic,Diesel,SUV / Cross over,7,1.145.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91428236.htm
+Ford,Focus,2018,410000,Automatic,Gasoline,Hatchback,5,499.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-buon-ho-dak-lak/90211872.htm
+Ford,Ranger,2018,74000,Manual,Diesel,Pick-up (bán tải),5,565.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/89979645.htm
+Hyundai,Accent,2019,17000,Automatic,Gasoline,Sedan,5,485.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91383853.htm
+Mercedes Benz,A Class,2013,62000,Automatic,Gasoline,Hatchback,5,635.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/89407430.htm
+Mitsubishi,Jolie,2004,78000,Manual,Gasoline,SUV / Cross over,7,85.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/89640810.htm
+Mazda,6,2016,45000,Automatic,Gasoline,Sedan,5,595.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/84264802.htm
+Mitsubishi,Xpander,2020,29000,Automatic,Gasoline,Hatchback,7,515.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-bien-hoa-dong-nai/89487078.htm#px=SR-stickyad-[PO-1][PL-top]
+Hyundai,Grand i10,2017,42000,Automatic,Gasoline,Hatchback,5,325.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91390838.htm
+Ford,Ranger,2019,76000,Automatic,Diesel,Pick-up (bán tải),5,763.000.000,https://xe.chotot.com/mua-ban-oto-huyen-binh-chanh-tp-ho-chi-minh/91448278.htm
+Kia,Rio,2004,82890,Automatic,Gasoline,Sedan,5,172.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-khe-da-nang/90821688.htm
+Hyundai,Accent,2019,32000,Manual,Gasoline,Sedan,5,355.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448258.htm
+Daewoo,Matiz,2007,7656,Automatic,Gasoline,Hatchback,5,125.000.000,https://xe.chotot.com/mua-ban-oto-huyen-gia-lam-ha-noi/89981329.htm
+Hyundai,Accent,2020,7000,Automatic,Gasoline,Sedan,5,540.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448230.htm
+Toyota,Innova,2019,8000,Manual,Gasoline,Minivan (MPV),8,565.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91175428.htm
+Hyundai,Accent,2018,38000,Automatic,Gasoline,Sedan,5,475.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/89712607.htm
+Toyota,Fortuner,2021,21000,Automatic,Diesel,SUV / Cross over,7,1.145.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91428236.htm
+Ford,Focus,2018,410000,Automatic,Gasoline,Hatchback,5,499.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-buon-ho-dak-lak/90211872.htm
+Mercedes Benz,S Class,2016,50000,Automatic,Gasoline,Sedan,5,2.550.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91141768.htm#px=SR-stickyad-[PO-1][PL-top]
+BMW,3 Series,2016,800000,Automatic,Gasoline,Sedan,5,930.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448337.htm
+Toyota,Zace,2003,241045,Manual,Gasoline,SUV / Cross over,8,142.555.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/88494179.htm
+Hyundai,Grand i10,2017,42000,Automatic,Gasoline,Hatchback,5,325.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91390838.htm
+Ford,Ranger,2019,76000,Automatic,Diesel,Pick-up (bán tải),5,763.000.000,https://xe.chotot.com/mua-ban-oto-huyen-binh-chanh-tp-ho-chi-minh/91448278.htm
+Kia,Rio,2004,82890,Automatic,Gasoline,Sedan,5,172.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-khe-da-nang/90821688.htm
+Hyundai,Accent,2019,32000,Manual,Gasoline,Sedan,5,355.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448258.htm
+Daewoo,Matiz,2007,7656,Automatic,Gasoline,Hatchback,5,125.000.000,https://xe.chotot.com/mua-ban-oto-huyen-gia-lam-ha-noi/89981329.htm
+Hyundai,Accent,2020,7000,Automatic,Gasoline,Sedan,5,540.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448230.htm
+Toyota,Innova,2019,8000,Manual,Gasoline,Minivan (MPV),8,565.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91175428.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Kia,Cerato,2021,1000,Automatic,Gasoline,Sedan,5,578.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91448384.htm
+Kia,K3,2015,6,Automatic,Gasoline,Sedan,5,442.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448377.htm
+Toyota,Innova,2009,180000,Manual,Gasoline,Minivan (MPV),8,209.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thong-nhat-dong-nai/91430647.htm
+Chevrolet,Spark,2008,150000,Manual,Gasoline,Minivan (MPV),5,85.000.000,https://xe.chotot.com/mua-ban-oto-huyen-krong-pac-dak-lak/89215860.htm
+Toyota,Zace,2005,120000,Manual,Gasoline,SUV / Cross over,8,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91387960.htm
+BMW,3 Series,2016,800000,Automatic,Gasoline,Sedan,5,930.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448337.htm
+Toyota,Zace,2003,241045,Manual,Gasoline,SUV / Cross over,8,142.555.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/88494179.htm
+Hyundai,Grand i10,2017,42000,Automatic,Gasoline,Hatchback,5,325.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91390838.htm
+Ford,Ranger,2019,76000,Automatic,Diesel,Pick-up (bán tải),5,763.000.000,https://xe.chotot.com/mua-ban-oto-huyen-binh-chanh-tp-ho-chi-minh/91448278.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Kia,Cerato,2021,1000,Automatic,Gasoline,Sedan,5,578.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91448384.htm
+Kia,K3,2015,6,Automatic,Gasoline,Sedan,5,442.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448377.htm
+Toyota,Innova,2009,180000,Manual,Gasoline,Minivan (MPV),8,209.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thong-nhat-dong-nai/91430647.htm
+Chevrolet,Spark,2008,150000,Manual,Gasoline,Minivan (MPV),5,85.000.000,https://xe.chotot.com/mua-ban-oto-huyen-krong-pac-dak-lak/89215860.htm
+Toyota,Zace,2005,120000,Manual,Gasoline,SUV / Cross over,8,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91387960.htm
+BMW,3 Series,2016,800000,Automatic,Gasoline,Sedan,5,930.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448337.htm
+Toyota,Zace,2003,241045,Manual,Gasoline,SUV / Cross over,8,142.555.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/88494179.htm
+Hyundai,Grand i10,2017,42000,Automatic,Gasoline,Hatchback,5,325.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91390838.htm
+Ford,Ranger,2019,76000,Automatic,Diesel,Pick-up (bán tải),5,763.000.000,https://xe.chotot.com/mua-ban-oto-huyen-binh-chanh-tp-ho-chi-minh/91448278.htm
+Hyundai,Accent,2012,6223,Automatic,Gasoline,Sedan,5,335.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448427.htm
+Kia,Sorento,2017,58769,Automatic,Gasoline,SUV / Cross over,7,710.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75151686.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Kia,Cerato,2021,1000,Automatic,Gasoline,Sedan,5,578.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91448384.htm
+Kia,K3,2015,6,Automatic,Gasoline,Sedan,5,442.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448377.htm
+Toyota,Innova,2009,180000,Manual,Gasoline,Minivan (MPV),8,209.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thong-nhat-dong-nai/91430647.htm
+Chevrolet,Spark,2008,150000,Manual,Gasoline,Minivan (MPV),5,85.000.000,https://xe.chotot.com/mua-ban-oto-huyen-krong-pac-dak-lak/89215860.htm
+Toyota,Zace,2005,120000,Manual,Gasoline,SUV / Cross over,8,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91387960.htm
+BMW,3 Series,2016,800000,Automatic,Gasoline,Sedan,5,930.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448337.htm
+Toyota,Zace,2003,241045,Manual,Gasoline,SUV / Cross over,8,142.555.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/88494179.htm
+Kia,Rondo,2016,65000,Automatic,Diesel,Minivan (MPV),7,520.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/90551579.htm#px=SR-stickyad-[PO-1][PL-top]
+Toyota,Corolla,2000,80000,Manual,Gasoline,Sedan,5,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91254201.htm
+Hyundai,Accent,2012,6223,Automatic,Gasoline,Sedan,5,335.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448427.htm
+Kia,Sorento,2017,58769,Automatic,Gasoline,SUV / Cross over,7,710.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75151686.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Kia,Cerato,2021,1000,Automatic,Gasoline,Sedan,5,578.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91448384.htm
+Kia,K3,2015,6,Automatic,Gasoline,Sedan,5,442.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448377.htm
+Toyota,Innova,2009,180000,Manual,Gasoline,Minivan (MPV),8,209.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thong-nhat-dong-nai/91430647.htm
+Chevrolet,Spark,2008,150000,Manual,Gasoline,Minivan (MPV),5,85.000.000,https://xe.chotot.com/mua-ban-oto-huyen-krong-pac-dak-lak/89215860.htm
+Toyota,Zace,2005,120000,Manual,Gasoline,SUV / Cross over,8,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91387960.htm
+BMW,3 Series,2016,800000,Automatic,Gasoline,Sedan,5,930.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448337.htm
+Toyota,Zace,2003,241045,Manual,Gasoline,SUV / Cross over,8,142.555.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/88494179.htm
+Kia,Rondo,2016,65000,Automatic,Diesel,Minivan (MPV),7,520.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/90551579.htm#px=SR-stickyad-[PO-1][PL-top]
+Hyundai,Tucson,2009,11223,Manual,Gasoline,SUV / Cross over,5,245.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/90551579.htm#px=SR-stickyad-[PO-1][PL-top]
+Toyota,Corolla,2000,80000,Manual,Gasoline,Sedan,5,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91254201.htm
+Hyundai,Accent,2012,6223,Automatic,Gasoline,Sedan,5,335.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448427.htm
+Kia,Sorento,2017,58769,Automatic,Gasoline,SUV / Cross over,7,710.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75151686.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Kia,Cerato,2021,1000,Automatic,Gasoline,Sedan,5,578.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91448384.htm
+Kia,K3,2015,6,Automatic,Gasoline,Sedan,5,442.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448377.htm
+Toyota,Innova,2009,180000,Manual,Gasoline,Minivan (MPV),8,209.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thong-nhat-dong-nai/91430647.htm
+Chevrolet,Spark,2008,150000,Manual,Gasoline,Minivan (MPV),5,85.000.000,https://xe.chotot.com/mua-ban-oto-huyen-krong-pac-dak-lak/89215860.htm
+Toyota,Zace,2005,120000,Manual,Gasoline,SUV / Cross over,8,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91387960.htm
+BMW,3 Series,2016,800000,Automatic,Gasoline,Sedan,5,930.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448337.htm
+Hyundai,Tucson,2009,11223,Manual,Gasoline,SUV / Cross over,5,245.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448515.htm
+Toyota,Corolla,2000,80000,Manual,Gasoline,Sedan,5,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91254201.htm
+Hyundai,Accent,2012,6223,Automatic,Gasoline,Sedan,5,335.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448427.htm
+Kia,Sorento,2017,58769,Automatic,Gasoline,SUV / Cross over,7,710.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75151686.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Kia,Cerato,2021,1000,Automatic,Gasoline,Sedan,5,578.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91448384.htm
+Kia,K3,2015,6,Automatic,Gasoline,Sedan,5,442.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448377.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Ford,Laser,2002,200000,Manual,Gasoline,Sedan,5,165.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/89862753.htm
+Hyundai,Tucson,2009,11223,Manual,Gasoline,SUV / Cross over,5,245.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448515.htm
+Toyota,Corolla,2000,80000,Manual,Gasoline,Sedan,5,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91254201.htm
+Hyundai,Accent,2012,6223,Automatic,Gasoline,Sedan,5,335.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448427.htm
+Kia,Sorento,2017,58769,Automatic,Gasoline,SUV / Cross over,7,710.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75151686.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Hãng khác,Dòng khác,2010,16869,Manual,Gasoline,Coupe (2 cửa),2,69.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ham-thuan-bac-binh-thuan/91448652.htm
+Chevrolet,Trailblazer,2018,55000,Automatic,Diesel,SUV / Cross over,8,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358619.htm
+Hyundai,Elantra,2019,30000,Automatic,Gasoline,Sedan,5,610.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91290404.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Ford,Laser,2002,200000,Manual,Gasoline,Sedan,5,165.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/89862753.htm
+Hyundai,Tucson,2009,11223,Manual,Gasoline,SUV / Cross over,5,245.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448515.htm
+Toyota,Corolla,2000,80000,Manual,Gasoline,Sedan,5,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91254201.htm
+Hyundai,Accent,2012,6223,Automatic,Gasoline,Sedan,5,335.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448427.htm
+Kia,Sorento,2017,58769,Automatic,Gasoline,SUV / Cross over,7,710.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75151686.htm
+Chevrolet,Cavalier,2009,98540,Manual,Gasoline,Minivan (MPV),7,237.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/90981991.htm
+Hãng khác,Dòng khác,2010,16869,Manual,Gasoline,Coupe (2 cửa),2,69.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ham-thuan-bac-binh-thuan/91448652.htm
+Chevrolet,Trailblazer,2018,55000,Automatic,Diesel,SUV / Cross over,8,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358619.htm
+Hyundai,Elantra,2019,30000,Automatic,Gasoline,Sedan,5,610.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91290404.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Ford,Laser,2002,200000,Manual,Gasoline,Sedan,5,165.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/89862753.htm
+Hyundai,Tucson,2009,11223,Manual,Gasoline,SUV / Cross over,5,245.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448515.htm
+Toyota,Corolla,2000,80000,Manual,Gasoline,Sedan,5,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91254201.htm
+Hyundai,Santa Fe,2017,63000,Automatic,Gasoline,SUV / Cross over,7,818.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/90195135.htm
+Chevrolet,Cavalier,2009,98540,Manual,Gasoline,Minivan (MPV),7,237.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/90981991.htm
+Hãng khác,Dòng khác,2010,16869,Manual,Gasoline,Coupe (2 cửa),2,69.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ham-thuan-bac-binh-thuan/91448652.htm
+Chevrolet,Trailblazer,2018,55000,Automatic,Diesel,SUV / Cross over,8,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358619.htm
+Hyundai,Elantra,2019,30000,Automatic,Gasoline,Sedan,5,610.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91290404.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Ford,Laser,2002,200000,Manual,Gasoline,Sedan,5,165.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/89862753.htm
+Ford,Focus,2008,190000,Automatic,Gasoline,Hatchback,5,172.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-hai-duong-hai-duong/91326930.htm
+Honda,CR V,2016,79000,Automatic,Gasoline,SUV / Cross over,5,699.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/91337117.htm
+Hyundai,Santa Fe,2017,63000,Automatic,Gasoline,SUV / Cross over,7,818.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/90195135.htm
+Chevrolet,Cavalier,2009,98540,Manual,Gasoline,Minivan (MPV),7,237.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/90981991.htm
+Hãng khác,Dòng khác,2010,16869,Manual,Gasoline,Coupe (2 cửa),2,69.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ham-thuan-bac-binh-thuan/91448652.htm
+Chevrolet,Trailblazer,2018,55000,Automatic,Diesel,SUV / Cross over,8,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358619.htm
+Hyundai,Elantra,2019,30000,Automatic,Gasoline,Sedan,5,610.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91290404.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Ford,Laser,2002,200000,Manual,Gasoline,Sedan,5,165.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/89862753.htm
+Ford,Ranger,2017,58000,Manual,Diesel,Pick-up (bán tải),5,476.000.000,https://xe.chotot.com/mua-ban-oto-quan-hoang-mai-ha-noi/91444388.htm
+Ford,Everest,2009,138000,Automatic,Diesel,SUV / Cross over,7,385.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/90801018.htm
+Ford,Focus,2008,190000,Automatic,Gasoline,Hatchback,5,172.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-hai-duong-hai-duong/91326930.htm
+Honda,CR V,2016,79000,Automatic,Gasoline,SUV / Cross over,5,699.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/91337117.htm
+Hyundai,Santa Fe,2017,63000,Automatic,Gasoline,SUV / Cross over,7,818.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/90195135.htm
+Chevrolet,Cavalier,2009,98540,Manual,Gasoline,Minivan (MPV),7,237.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/90981991.htm
+Hãng khác,Dòng khác,2010,16869,Manual,Gasoline,Coupe (2 cửa),2,69.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ham-thuan-bac-binh-thuan/91448652.htm
+Chevrolet,Trailblazer,2018,55000,Automatic,Diesel,SUV / Cross over,8,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358619.htm
+Hyundai,Elantra,2019,30000,Automatic,Gasoline,Sedan,5,610.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91290404.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Ford,Laser,2002,200000,Manual,Gasoline,Sedan,5,165.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/89862753.htm
+Ford,Ranger,2017,58000,Manual,Diesel,Pick-up (bán tải),5,476.000.000,https://xe.chotot.com/mua-ban-oto-quan-hoang-mai-ha-noi/91444388.htm
+Ford,Everest,2009,138000,Automatic,Diesel,SUV / Cross over,7,385.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/90801018.htm
+Ford,Focus,2008,190000,Automatic,Gasoline,Hatchback,5,172.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-hai-duong-hai-duong/91326930.htm
+Honda,CR V,2016,79000,Automatic,Gasoline,SUV / Cross over,5,699.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/91337117.htm
+Hyundai,Santa Fe,2017,63000,Automatic,Gasoline,SUV / Cross over,7,818.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/90195135.htm
+Chevrolet,Cavalier,2009,98540,Manual,Gasoline,Minivan (MPV),7,237.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/90981991.htm
+Hãng khác,Dòng khác,2010,16869,Manual,Gasoline,Coupe (2 cửa),2,69.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ham-thuan-bac-binh-thuan/91448652.htm
+Chevrolet,Trailblazer,2018,55000,Automatic,Diesel,SUV / Cross over,8,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358619.htm
+Hyundai,Elantra,2019,30000,Automatic,Gasoline,Sedan,5,610.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91290404.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Kia,Morning,2015,200,Manual,Gasoline,Hatchback,5,175.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91448903.htm
+Ford,Ranger,2017,58000,Manual,Diesel,Pick-up (bán tải),5,476.000.000,https://xe.chotot.com/mua-ban-oto-quan-hoang-mai-ha-noi/91444388.htm
+Ford,Everest,2009,138000,Automatic,Diesel,SUV / Cross over,7,385.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/90801018.htm
+Ford,Focus,2008,190000,Automatic,Gasoline,Hatchback,5,172.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-hai-duong-hai-duong/91326930.htm
+brand,model,date,km_driven,transmission,fuel,type,seats,price,url
+Hyundai,Grand i10,2019,79000,Manual,Gasoline,Hatchback,5,49.000.000,https://xe.chotot.com/mua-ban-oto-quan-1-tp-ho-chi-minh/88238671.htm#px=SR-stickyad-[PO-1][PL-top]
+Ford,Everest,2018,62962,Automatic,Diesel,SUV / Cross over,7,955.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/89002810.htm
+Toyota,Innova,2018,83000,Manual,Gasoline,SUV / Cross over,8,515.000.000,https://xe.chotot.com/mua-ban-oto-quan-12-tp-ho-chi-minh/91419236.htm
+Mercedes Benz,E Class,2008,90000,Automatic,Gasoline,Sedan,5,370.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91242578.htm
+Mitsubishi,Grandis,2009,112000,Automatic,Gasoline,Minivan (MPV),7,365.000.000,https://xe.chotot.com/mua-ban-oto-huyen-dat-do-ba-ria-vung-tau/91449038.htm
+Ford,Everest,2019,42000,Automatic,Diesel,SUV / Cross over,7,1.025.000.000,https://xe.chotot.com/mua-ban-oto-huyen-binh-chanh-tp-ho-chi-minh/90292898.htm
+Mazda,Premacy,2003,98000,Automatic,Gasoline,Minivan (MPV),7,180.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91449023.htm#px=SR-special_display_ad-[PO-1][PL-default]
+Hyundai,Kona,2019,28000,Automatic,Gasoline,SUV / Cross over,5,635.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91419222.htm
+Mitsubishi,Pajero Sport,2014,88000,Automatic,Gasoline,SUV / Cross over,7,530.000.000,https://xe.chotot.com/mua-ban-oto-quan-6-tp-ho-chi-minh/91449003.htm
+Chevrolet,Trailblazer,2018,55000,Manual,Diesel,SUV / Cross over,8,595.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358461.htm
+Ford,Everest,2019,31000,Automatic,Diesel,SUV / Cross over,7,1.220.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/90861048.htm
+Ford,Ranger,2018,40000,Automatic,Diesel,Pick-up (bán tải),5,775.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/85141720.htm
+Mitsubishi,Xpander,2019,30000,Automatic,Gasoline,SUV / Cross over,7,519.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-nha-trang-khanh-hoa/90684342.htm
+Kia,Morning,2019,25000,Automatic,Gasoline,Hatchback,5,355.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-ben-tre-ben-tre/80018728.htm
+Ford,Laser,2001,114000,Manual,Gasoline,Sedan,5,152.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91348529.htm
+Hyundai,Accent,2019,17000,Automatic,Gasoline,Sedan,5,485.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91383853.htm#px=SR-stickyad-[PO-1][PL-top]
+Kia,Morning,2015,200,Manual,Gasoline,Hatchback,5,175.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91448903.htm
+Ford,Ranger,2017,58000,Manual,Diesel,Pick-up (bán tải),5,476.000.000,https://xe.chotot.com/mua-ban-oto-quan-hoang-mai-ha-noi/91444388.htm
+Ford,Everest,2009,138000,Automatic,Diesel,SUV / Cross over,7,385.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/90801018.htm
+Ford,Focus,2008,190000,Automatic,Gasoline,Hatchback,5,172.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-hai-duong-hai-duong/91326930.htm
+Honda,CR V,2016,79000,Automatic,Gasoline,SUV / Cross over,5,699.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/91337117.htm
+Hyundai,Santa Fe,2017,63000,Automatic,Gasoline,SUV / Cross over,7,818.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/90195135.htm
+Chevrolet,Cavalier,2009,98540,Manual,Gasoline,Minivan (MPV),7,237.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/90981991.htm
+Hãng khác,Dòng khác,2010,16869,Manual,Gasoline,Coupe (2 cửa),2,69.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ham-thuan-bac-binh-thuan/91448652.htm
+Chevrolet,Trailblazer,2018,55000,Automatic,Diesel,SUV / Cross over,8,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91358619.htm
+Hyundai,Elantra,2019,30000,Automatic,Gasoline,Sedan,5,610.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91290404.htm
+Ford,Ranger,2021,5000,Automatic,Diesel,Pick-up (bán tải),5,1.279.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/87735613.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Mercedes Benz,C Class,2018,30000,Automatic,Gasoline,Sedan,5,1.445.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448601.htm
+Ford,Laser,2002,200000,Manual,Gasoline,Sedan,5,165.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/89862753.htm
+Hyundai,Tucson,2009,11223,Manual,Gasoline,SUV / Cross over,5,245.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448515.htm
+Toyota,Corolla,2000,80000,Manual,Gasoline,Sedan,5,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91254201.htm
+Hyundai,Accent,2012,6223,Automatic,Gasoline,Sedan,5,335.000.000,https://xe.chotot.com/mua-ban-oto-huyen-nghi-xuan-ha-tinh/91448427.htm
+Kia,Sorento,2017,58769,Automatic,Gasoline,SUV / Cross over,7,710.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75151686.htm
+Toyota,Innova,2008,127534,Automatic,Gasoline,Minivan (MPV),8,323.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91448389.htm
+Kia,Cerato,2021,1000,Automatic,Gasoline,Sedan,5,578.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91448384.htm
+Kia,K3,2015,6,Automatic,Gasoline,Sedan,5,442.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448377.htm
+Toyota,Innova,2009,180000,Manual,Gasoline,Minivan (MPV),8,209.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thong-nhat-dong-nai/91430647.htm
+Chevrolet,Spark,2008,150000,Manual,Gasoline,Minivan (MPV),5,85.000.000,https://xe.chotot.com/mua-ban-oto-huyen-krong-pac-dak-lak/89215860.htm
+Toyota,Zace,2005,120000,Manual,Gasoline,SUV / Cross over,8,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91387960.htm
+BMW,3 Series,2016,800000,Automatic,Gasoline,Sedan,5,930.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91448337.htm
+Toyota,Zace,2003,241045,Manual,Gasoline,SUV / Cross over,8,142.555.000,https://xe.chotot.com/mua-ban-oto-thi-xa-ben-cat-binh-duong/88494179.htm
+Hyundai,Grand i10,2017,42000,Automatic,Gasoline,Hatchback,5,325.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91390838.htm
+Ford,Ranger,2019,76000,Automatic,Diesel,Pick-up (bán tải),5,763.000.000,https://xe.chotot.com/mua-ban-oto-huyen-binh-chanh-tp-ho-chi-minh/91448278.htm
+Kia,Rio,2004,82890,Automatic,Gasoline,Sedan,5,172.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-khe-da-nang/90821688.htm
+Hyundai,Accent,2019,32000,Manual,Gasoline,Sedan,5,355.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448258.htm
+Daewoo,Matiz,2007,7656,Automatic,Gasoline,Hatchback,5,125.000.000,https://xe.chotot.com/mua-ban-oto-huyen-gia-lam-ha-noi/89981329.htm
+Hyundai,Accent,2020,7000,Automatic,Gasoline,Sedan,5,540.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91448230.htm
+Toyota,Innova,2019,8000,Manual,Gasoline,Minivan (MPV),8,565.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91175428.htm
+Toyota,Innova,2019,8000,Manual,Gasoline,Minivan (MPV),8,565.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91175428.htm
+Hyundai,Accent,2018,38000,Automatic,Gasoline,Sedan,5,475.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/89712607.htm
+Toyota,Fortuner,2021,21000,Automatic,Diesel,SUV / Cross over,7,1.145.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91428236.htm
+Ford,Focus,2018,410000,Automatic,Gasoline,Hatchback,5,499.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-buon-ho-dak-lak/90211872.htm
+Ford,Ranger,2018,74000,Manual,Diesel,Pick-up (bán tải),5,565.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/89979645.htm
+Hyundai,Accent,2019,17000,Automatic,Gasoline,Sedan,5,485.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91383853.htm
+Mercedes Benz,A Class,2013,62000,Automatic,Gasoline,Hatchback,5,635.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/89407430.htm
+Mitsubishi,Jolie,2004,78000,Manual,Gasoline,SUV / Cross over,7,85.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/89640810.htm
+Mazda,6,2016,45000,Automatic,Gasoline,Sedan,5,595.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/84264802.htm
+Hyundai,Santa Fe,2018,73679,Automatic,Diesel,SUV / Cross over,7,945.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/75742499.htm
+Kia,Sorento,2019,42000,Automatic,Diesel,SUV / Cross over,5,865.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/91285502.htm
+Kia,Morning,2017,87000,Manual,Gasoline,Hatchback,5,215.000.000,https://xe.chotot.com/mua-ban-oto-quan-7-tp-ho-chi-minh/91448084.htm
+Toyota,Fortuner,2016,60000,Manual,Diesel,SUV / Cross over,7,629.000.000,https://xe.chotot.com/mua-ban-oto-quan-ba-dinh-ha-noi/89800846.htm
+Toyota,Innova,2009,178989,Manual,Gasoline,Minivan (MPV),8,255.000.000,https://xe.chotot.com/mua-ban-oto-huyen-duc-trong-lam-dong/91448081.htm
+Daewoo,Matiz,2006,110000,Automatic,Gasoline,Hatchback,5,129.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/90356356.htm
+Honda,CR V,2012,110000,Automatic,Gasoline,SUV / Cross over,5,466.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/90222280.htm
+Toyota,Vios,2018,39000,Automatic,Gasoline,Sedan,5,478.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-bien-hoa-dong-nai/90023893.htm
+Hyundai,Elantra,2018,38000,Automatic,Gasoline,Sedan,5,586.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91422324.htm
+Hyundai,Getz,2007,165000,Automatic,Gasoline,Hatchback,5,175.000.000,https://xe.chotot.com/mua-ban-oto-huyen-ba-vi-ha-noi/91447932.htm
+Ford,Laser,2002,196000,Manual,Gasoline,Sedan,5,148.000.000,https://xe.chotot.com/mua-ban-oto-huyen-vung-liem-vinh-long/91447905.htm
+Mazda,BT 50,2018,67000,Automatic,Diesel,Pick-up (bán tải),5,559.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91236511.htm
+Suzuki,Ertiga,2019,63218,Automatic,Gasoline,Minivan (MPV),7,476.000.000,https://xe.chotot.com/mua-ban-oto-quan-1-tp-ho-chi-minh/88820530.htm
+Ford,Everest,2020,21000,Automatic,Diesel,SUV / Cross over,7,1.335.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/90736717.htm
+Toyota,Corolla Altis,2017,40000,Automatic,Gasoline,Sedan,5,565.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/91293577.htm
+Toyota,Zace,2004,120000,Manual,Gasoline,SUV / Cross over,8,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/88099499.htm
+Hyundai,Kona,2020,21389,Automatic,Gasoline,SUV / Cross over,5,650.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/76641941.htm
+Hyundai,Kona,2020,21389,Automatic,Gasoline,SUV / Cross over,5,650.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/76641941.htm
+Kia,Sorento,2017,62000,Automatic,Gasoline,SUV / Cross over,7,705.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/91340379.htm
+Toyota,Zace,2005,72000,Manual,Gasoline,Minivan (MPV),8,265.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91265812.htm
+Ford,Laser,2004,72300,Manual,Gasoline,Sedan,5,140.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-dong-xoai-binh-phuoc/89454489.htm
+Toyota,Fortuner,2017,65000,Automatic,Gasoline,SUV / Cross over,7,800.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/91447747.htm
+Toyota,Innova,2015,80000,Manual,Gasoline,SUV / Cross over,7,395.000.000,https://xe.chotot.com/mua-ban-oto-huyen-dong-anh-ha-noi/89910910.htm
+Kia,Morning,2011,120000,Automatic,Gasoline,Hatchback,2,195.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/91447727.htm
+Daewoo,Lanos,2002,230000,Manual,Gasoline,Sedan,5,62.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-pleiku-gia-lai/91447723.htm
+Mercedes Benz,C Class,2019,23456,Automatic,Gasoline,Sedan,5,1.390.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/90447823.htm
+Daewoo,GentraX,2008,60000,Automatic,Gasoline,Minivan (MPV),5,179.999.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/91332468.htm
+Hyundai,Accent,2012,95268,Automatic,Gasoline,Sedan,5,330.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/91447703.htm
+Mitsubishi,Mirage,2018,60000,Manual,Gasoline,Hatchback,5,248.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91268531.htm
+Toyota,Innova,2013,12000,Manual,Gasoline,SUV / Cross over,7,338.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91418168.htm
+Toyota,Zace,2005,74000,Manual,Gasoline,SUV / Cross over,8,275.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-thu-dau-mot-binh-duong/89878125.htm
+Toyota,Fortuner,2019,55000,Manual,Diesel,SUV / Cross over,7,880.000.000,https://xe.chotot.com/mua-ban-oto-quan-cai-rang-can-tho/91343978.htm
+Mercedes Benz,C Class,2019,12000,Automatic,Gasoline,Sedan,4,1.315.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/87868552.htm
+Mitsubishi,Grandis,2008,112000,Automatic,Gasoline,Minivan (MPV),8,330.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-vung-tau-ba-ria-vung-tau/91447604.htm
+Lexus,RX,2018,34000,Automatic,Gasoline,SUV / Cross over,5,2.989.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91065325.htm
+Mercedes Benz,C Class,2018,27000,Automatic,Gasoline,Sedan,5,1.168.000.000,https://xe.chotot.com/mua-ban-oto-quan-7-tp-ho-chi-minh/91354468.htm
+Isuzu,Mu X,2017,73000,Automatic,Diesel,SUV / Cross over,7,679.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91252053.htm
+Ford,Focus,2017,118168,Automatic,Gasoline,Sedan,5,459.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/70843820.htm
+Toyota,Vios,2017,62000,Manual,Gasoline,Sedan,5,308.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/90792632.htm
+Volkswagen,Golf,2012,53000,Automatic,Gasoline,Mui trần,4,890.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/85804514.htm
+Mazda,CX 5,2018,32000,Automatic,Gasoline,SUV / Cross over,5,780.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/91426888.htm
+Kia,Sorento,2019,38789,Automatic,Diesel,SUV / Cross over,5,860.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/90496899.htm
+BMW,5 Series,2010,60000,Manual,Gasoline,Sedan,4,649.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/90841838.htm
+Kia,Morning,2016,56000,Automatic,Gasoline,Hatchback,2,265.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91429372.htm
+Toyota,Innova,2011,121231,Automatic,Gasoline,Sedan,8,337.000.000,https://xe.chotot.com/mua-ban-oto-huyen-trang-bom-dong-nai/91131243.htm
+Kia,Morning,2011,12000,Automatic,Gasoline,Hatchback,5,205.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91418024.htm
+Toyota,Zace,2005,74000,Manual,Gasoline,Minivan (MPV),8,275.000.000,https://xe.chotot.com/mua-ban-oto-huyen-hoc-mon-tp-ho-chi-minh/89874832.htm
+Kia,Morning,2013,22000,Manual,Gasoline,Hatchback,5,158.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-thai-binh-thai-binh/91389193.htm
+Toyota,Innova,2016,64975,Manual,Gasoline,Minivan (MPV),8,330.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/83599450.htm
+Honda,HR-V,2019,11000,Automatic,Gasoline,SUV / Cross over,5,695.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-bien-hoa-dong-nai/91447336.htm
+Toyota,Fortuner,2019,60000,Automatic,Diesel,SUV / Cross over,7,935.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/88607998.htm
+Lexus,ES,2018,64000,Automatic,Gasoline,Sedan,5,1.880.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/90467888.htm
+BMW,5 Series,2007,1234,Manual,Gasoline,Sedan,4,368.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/88208251.htm
+Kia,Morning,2011,80000,Automatic,Gasoline,Hatchback,5,238.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/90210053.htm
+Ford,Focus,2005,60000,Automatic,Gasoline,Hatchback,5,185.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-huong-thuy-thua-thien-hue/90306972.htm
+Ford,Ranger,2013,89668,Automatic,Diesel,Pick-up (bán tải),5,446.000.000,https://xe.chotot.com/mua-ban-oto-quan-10-tp-ho-chi-minh/89857954.htm
+Honda,Civic,2010,12000,Automatic,Gasoline,Sedan,5,336.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91380435.htm
+Chevrolet,Spark,2010,90000,Manual,Gasoline,Hatchback,5,98.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91356332.htm
+Hyundai,Accent,2018,42345,Manual,Gasoline,Sedan,5,386.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91048626.htm
+Toyota,Innova,2015,70000,Manual,Gasoline,Minivan (MPV),8,332.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/87537557.htm
+Hyundai,i30,2009,90000,Automatic,Gasoline,Hatchback,5,285.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91043127.htm
+Mercedes Benz,Dòng khác,trước năm 1980,12466,Manual,Gasoline,Sedan,4,138.000.000,https://xe.chotot.com/mua-ban-oto-quan-thot-not-can-tho/91265988.htm
+Mercedes Benz,Dòng khác,2007,180000,Manual,Diesel,Van,6,168.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91447077.htm
+Honda,Civic,2019,30000,Automatic,Gasoline,Sedan,5,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/90380706.htm
+Mazda,3,2017,250,Bán tự động,Gasoline,Sedan,5,495.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/90617543.htm
+Kia,Morning,2017,20000,Automatic,Gasoline,Hatchback,5,319.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thanh-tri-ha-noi/91330329.htm
+Mazda,3,2020,34000,Automatic,Gasoline,Sedan,5,618.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/89680006.htm
+Kia,Sedona,2019,25000,Automatic,Gasoline,Minivan (MPV),8,940.000.000,https://xe.chotot.com/mua-ban-oto-quan-4-tp-ho-chi-minh/91422383.htm
+Toyota,Innova,2016,70000,Manual,Gasoline,Minivan (MPV),8,360.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/88496268.htm
+Kia,Morning,2011,80000,Automatic,Gasoline,Hatchback,5,238.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/90210053.htm
+Ford,Focus,2005,60000,Automatic,Gasoline,Hatchback,5,185.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-huong-thuy-thua-thien-hue/90306972.htm
+Ford,Ranger,2013,89668,Automatic,Diesel,Pick-up (bán tải),5,446.000.000,https://xe.chotot.com/mua-ban-oto-quan-10-tp-ho-chi-minh/89857954.htm
+Honda,Civic,2010,12000,Automatic,Gasoline,Sedan,5,336.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91380435.htm
+Chevrolet,Spark,2010,90000,Manual,Gasoline,Hatchback,5,98.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91356332.htm
+Hyundai,Accent,2018,42345,Manual,Gasoline,Sedan,5,386.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91048626.htm
+Toyota,Innova,2015,70000,Manual,Gasoline,Minivan (MPV),8,332.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/87537557.htm
+Hyundai,i30,2009,90000,Automatic,Gasoline,Hatchback,5,285.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91043127.htm
+Mercedes Benz,Dòng khác,trước năm 1980,12466,Manual,Gasoline,Sedan,4,138.000.000,https://xe.chotot.com/mua-ban-oto-quan-thot-not-can-tho/91265988.htm
+Mercedes Benz,Dòng khác,2007,180000,Manual,Diesel,Van,6,168.000.000,https://xe.chotot.com/mua-ban-oto-quan-go-vap-tp-ho-chi-minh/91447077.htm
+Honda,Civic,2019,30000,Automatic,Gasoline,Sedan,5,685.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/90380706.htm
+Mazda,3,2017,250,Bán tự động,Gasoline,Sedan,5,495.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/90617543.htm
+Kia,Morning,2017,20000,Automatic,Gasoline,Hatchback,5,319.000.000,https://xe.chotot.com/mua-ban-oto-huyen-thanh-tri-ha-noi/91330329.htm
+Mazda,3,2020,34000,Automatic,Gasoline,Sedan,5,618.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/89680006.htm
+Kia,Sedona,2019,25000,Automatic,Gasoline,Minivan (MPV),8,940.000.000,https://xe.chotot.com/mua-ban-oto-quan-4-tp-ho-chi-minh/91422383.htm
+Toyota,Innova,2016,70000,Manual,Gasoline,Minivan (MPV),8,360.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/88496268.htm
+Mercedes Benz,E Class,trước năm 1980,313131,Manual,Gasoline,Sedan,4,168.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/85293892.htm
+Ford,Explorer,2018,300000,Automatic,Gasoline,SUV / Cross over,8,1.790.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/87703465.htm
+Mazda,CX 5,2014,68000,Automatic,Gasoline,SUV / Cross over,5,580.000.000,https://xe.chotot.com/mua-ban-oto-quan-thanh-xuan-ha-noi/91224491.htm
+Toyota,Yaris,2008,68000,Automatic,Gasoline,Sedan,5,305.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/90507861.htm
+Nissan,Sunny,2018,43600,Manual,Gasoline,Sedan,5,360.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91253692.htm
+Mazda,3,2019,18200,Automatic,Gasoline,Sedan,5,699.000.000,https://xe.chotot.com/mua-ban-oto-quan-2-tp-ho-chi-minh/91398182.htm
+Toyota,Camry,2007,179000,Automatic,Gasoline,Sedan,5,397.000.000,https://xe.chotot.com/mua-ban-oto-huyen-di-linh-lam-dong/91444946.htm
+Toyota,Innova,2007,280000,Manual,Gasoline,Minivan (MPV),8,210.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-kinh-mon-hai-duong/91446964.htm
+Mitsubishi,Xpander,2020,20000,Automatic,Gasoline,SUV / Cross over,7,565.000.000,https://xe.chotot.com/mua-ban-oto-quan-7-tp-ho-chi-minh/90846667.htm
+Toyota,Innova,2008,90000,Manual,Gasoline,Minivan (MPV),8,255.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91140662.htm
+Hyundai,Accent,2020,25000,Automatic,Gasoline,Sedan,5,498.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91380181.htm
+Chevrolet,Spark,2010,50000,Manual,Gasoline,Hatchback,5,82.000.000,https://xe.chotot.com/mua-ban-oto-quan-bac-tu-liem-ha-noi/90471006.htm
+Mazda,CX 5,2016,44852,Automatic,Gasoline,SUV / Cross over,5,667.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/90292046.htm#px=SR-special_display_ad-[PO-1][PL-default]
+Chevrolet,Cruze,2012,16000,Manual,Gasoline,Sedan,5,235.000.000,https://xe.chotot.com/mua-ban-oto-thi-xa-huong-thuy-thua-thien-hue/91446929.htm
+Lexus,LX,2016,61000,Automatic,Gasoline,SUV / Cross over,8,6.850.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/85646650.htm
+Honda,Civic,2007,90000,Automatic,Gasoline,Sedan,5,288.000.000,https://xe.chotot.com/mua-ban-oto-huyen-cu-chi-tp-ho-chi-minh/91137817.htm
+Toyota,Fortuner,2013,99999,Manual,Diesel,SUV / Cross over,7,580.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-bao-loc-lam-dong/91446892.htm
+Toyota,Vios,2012,123,Manual,Gasoline,Sedan,5,235.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-ba-ria-ba-ria-vung-tau/91446877.htm
+Toyota,Vios,2016,80000,Automatic,Gasoline,Sedan,5,405.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/91387859.htm
+Kia,Pride,1992,999999,Manual,Gasoline,Sedan,5,30.000.000,https://xe.chotot.com/mua-ban-oto-huyen-chau-thanh-dong-thap/91446804.htm
+Mazda,CX 5,2018,50000,Automatic,Gasoline,SUV / Cross over,5,760.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91393993.htm
+Chevrolet,Spark,2009,120000,Manual,Gasoline,Hatchback,5,79.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/90631161.htm
+Hyundai,Grand i10,2018,46000,Automatic,Gasoline,Sedan,5,328.000.000,https://xe.chotot.com/mua-ban-oto-quan-11-tp-ho-chi-minh/91446695.htm
+Chevrolet,Captiva,2010,10,Automatic,Diesel,SUV / Cross over,8,325.000.000,https://xe.chotot.com/mua-ban-oto-quan-tay-ho-ha-noi/91446660.htm
+Toyota,Innova,2009,98669,Automatic,Gasoline,Minivan (MPV),8,296.000.000,https://xe.chotot.com/mua-ban-oto-quan-ha-dong-ha-noi/90765947.htm
+Kia,Morning,2015,50000,Automatic,Gasoline,Hatchback,5,295.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91286606.htm
+Mitsubishi,Outlander,2018,33000,Automatic,Gasoline,SUV / Cross over,7,776.000.000,https://xe.chotot.com/mua-ban-oto-quan-long-bien-ha-noi/90947056.htm
+Kia,Sorento,2016,61000,Automatic,Gasoline,Sedan,7,585.000.000,https://xe.chotot.com/mua-ban-oto-thanh-pho-pleiku-gia-lai/91393815.htm
+Ford,Explorer,2016,78000,Automatic,Gasoline,SUV / Cross over,8,1.550.000.000,https://xe.chotot.com/mua-ban-oto-quan-6-tp-ho-chi-minh/91249452.htm
+Toyota,Innova,2017,91000,Automatic,Gasoline,Minivan (MPV),8,555.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-phu-tp-ho-chi-minh/90848169.htm
+Mazda,BT 50,2017,68000,Automatic,Diesel,Pick-up (bán tải),5,525.000.000,https://xe.chotot.com/mua-ban-oto-quan-7-tp-ho-chi-minh/90704644.htm
+Toyota,Land Cruiser,1997,100000,Manual,Diesel,Sedan,7,325.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/88265302.htm
+Ford,Ranger,2019,18950,Automatic,Diesel,Pick-up (bán tải),5,636.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91196717.htm
+Toyota,Land Cruiser,2003,160,Manual,Gasoline,SUV / Cross over,8,385.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91299176.htm
+Toyota,Innova,2013,8000,Manual,Gasoline,SUV / Cross over,8,360.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/91446473.htm
+Ford,Everest,2015,3000,Manual,Diesel,SUV / Cross over,7,510.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/83429347.htm
+Toyota,Fortuner,2021,29000,Manual,Diesel,SUV / Cross over,7,929.000.000,https://xe.chotot.com/mua-ban-oto-quan-7-tp-ho-chi-minh/89334774.htm
+Ford,Everest,2019,32000,Automatic,Diesel,SUV / Cross over,7,910.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/91417928.htm
+Mercedes Benz,S Class,2016,45000,Automatic,Gasoline,Sedan,5,2.499.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/91049229.htm
+Toyota,Hiace,2016,100000,Manual,Diesel,Van,5,159.000.000,https://xe.chotot.com/mua-ban-oto-quan-thu-duc-tp-ho-chi-minh/86479044.htm
+Toyota,Corolla Altis,2008,95000,Manual,Gasoline,Sedan,5,280.000.000,https://xe.chotot.com/mua-ban-oto-quan-tan-binh-tp-ho-chi-minh/91289160.htm
+Ford,Laser,2003,20000,Manual,Gasoline,Sedan,5,136.000.000,https://xe.chotot.com/mua-ban-oto-huyen-dong-anh-ha-noi/90731740.htm
+Toyota,Innova,2018,76000,Manual,Gasoline,Minivan (MPV),8,499.000.000,https://xe.chotot.com/mua-ban-oto-huyen-binh-chanh-tp-ho-chi-minh/89664676.htm
+Nissan,Navara,2017,53000,Automatic,Diesel,Pick-up (bán tải),5,595.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91252716.htm
+Ford,Everest,2018,62962,Automatic,Diesel,SUV / Cross over,7,955.000.000,https://xe.chotot.com/mua-ban-oto-quan-8-tp-ho-chi-minh/88490373.htm
+Mazda,BT 50,2018,67000,Automatic,Diesel,Pick-up (bán tải),5,559.000.000,https://xe.chotot.com/mua-ban-oto-quan-binh-tan-tp-ho-chi-minh/91229023.htm
+Toyota,Land Cruiser,1999,100000,Manual,Gasoline,SUV / Cross over,7,275.000.000,https://xe.chotot.com/mua-ban-oto-quan-cau-giay-ha-noi/88265198.htm
+Mazda,CX 8,2019,22000,Automatic,Gasoline,SUV / Cross over,7,979.000.000,https://xe.chotot.com/mua-ban-oto-quan-ninh-kieu-can-tho/91446297.htm
+Toyota,Vios,2016,63000,Manual,Gasoline,Sedan,5,298.000.000,https://xe.chotot.com/mua-ban-oto-quan-nam-tu-liem-ha-noi/90364124.htm
