@@ -14,6 +14,9 @@ import time
 import pandas as pd
 import csv
 
+from bs4 import BeautifulSoup
+from pprint import pprint
+
 chromeOptions = Options()
 chromeOptions.headless = True
 proxy = Proxy()
@@ -28,12 +31,20 @@ chromeOptions.add_argument("ignore-certificate-errors")
 ser = Service(r"/Users/sontung/PycharmProjects/linhtinh/chromedriver-2")
 driver = webdriver.Chrome(service=ser, options=chromeOptions)
 driver.get("https://xe.chotot.com/mua-ban-oto-cu-sdca1")
+# req = driver.page_source
+# soup = BeautifulSoup(req, 'html.parser')
+
+# next_button_selector = '#__next > div.container > div.ct-detail.adview > div > div.row > div.col-sm-4.col-xs-12 > div'
+# button = soup.select(next_button_selector)
+# pprint(button)
 
 CARS = '//*[@id="__next"]/div[3]/div[1]/div[3]/main/div[1]/div[4]/div/div[1]/ul[1]/div[1]/li/a/div[2]/div/div[3]'
 CARS2 = '//*[@id="__next"]/div[3]/div[1]/div[3]/main/div[1]/div[4]/div/div[1]/ul[1]/div[2]/li/a/div[2]/div/div[2]/div/p'
-CARS3 =  '/html/body/div[1]/div[3]/div[1]/div[3]/main/div[1]/div[4]/div/div[1]/ul[1]/div[2]/li/a/div[2]/div/h3'
+CARS3 =  '/html/body/div[1]/div[3]/div[1]/div[3]/main/div[1]/div[4]/div/div[1]/ul[1]/div[1]/li/a/div[2]/div/div[3]'
+
 
 list_car = []
+url = []
 # WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, CARS3))).click()
 
 def process_car(car):
@@ -50,6 +61,7 @@ def process_car(car):
 
 def get_car(driver, path):
     global list_car
+    pages = 2
     hyper = {
         'car_brand' : '/html/body/div[1]/div[3]/div[1]/div/div[4]/div[5]/div[2]/div/div[2]/span/span[2]',
         'car_model' : '/html/body/div[1]/div[3]/div[1]/div/div[4]/div[5]/div[3]/div/div[2]/span/span[2]',
@@ -60,15 +72,16 @@ def get_car(driver, path):
         'car_type' : '/html/body/div[1]/div[3]/div[1]/div/div[4]/div[5]/div[10]/div/div[2]/span/span[2]',
         'car_seats' : '/html/body/div[1]/div[3]/div[1]/div/div[4]/div[5]/div[11]/div/div[2]/span/span[2]',
         'car_price' : '/html/body/div[1]/div[3]/div[1]/div/div[4]/div[2]/div[1]/div[1]/span/div/span/span/span[1]',
-        'next' : '/html/body/div[1]/div[3]/div[1]/div/div[2]/div[2]/div/button[2]'
+        'next' : '/html/body/div[1]/div[3]/div[1]/div/div[2]/div[2]/div/button[2]',
+        'back' : '/html/body/div[1]/div[3]/div[1]/div/div[2]/div[2]/div/button[1]'
 
     }
 
     ele = driver.find_element(By.XPATH, path)
     driver.execute_script("arguments[0].click();", ele)
-    for _ in range(10):
+    for _ in range(300):
         car = {}
-        time.sleep(random.uniform(0,1))
+        time.sleep(random.uniform(1,3))
         try:
             car['brand'] = driver.find_element(By.XPATH, hyper['car_brand']).text
             car['model'] = driver.find_element(By.XPATH, hyper['car_model']).text
@@ -85,20 +98,30 @@ def get_car(driver, path):
         # print(car)
         if len(car.keys()) > 9:
             list_car.append(process_car(car))
-        time.sleep(random.uniform(0,1))
+        time.sleep(random.uniform(1,2))
         next = driver.find_element(By.XPATH, hyper['next'])
+        out = next.get_attribute('outerHTML')
+        if len(out) > 71:
+            link = 'https://xe.chotot.com/mua-ban-oto-cu-sdca1?page=' + str(pages)
+            driver.get(link)
+            time.sleep(random.uniform(1, 2))
+            ele = driver.find_element(By.XPATH, path)
+            driver.execute_script("arguments[0].click();", ele)
+            pages += 1
+            continue
         driver.execute_script("arguments[0].click();", next)
+        time.sleep(random.uniform(1, 3))
         print('Loop {}: Done'.format(_))
     print('All done')
     driver.quit()
 
 get_car(driver, CARS3)
-# print(list_car)
+print(list_car)
 # print('-----')
 # print(list_car[0]['brand'])
 
 keys = list_car[0].keys()
-with open('4wheels.csv', 'w', newline='') as output_file:
+with open('4wheels.csv', 'a', newline='') as output_file:
     dict_writer = csv.DictWriter(output_file, keys)
     dict_writer.writeheader()
     dict_writer.writerows(list_car)
