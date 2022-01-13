@@ -16,8 +16,6 @@ from schema.validate import ValidateUsedCars
 
 def is_file_empty(file_path):
     """ Check if file is empty by confirming if its size is 0 bytes"""
-    # Check if file exist and it is empty
-
     return os.path.isfile(file_path) and os.path.getsize(file_path) == 0
 
 
@@ -253,7 +251,7 @@ class BonBanhCrawler(Crawler):
 
         self.log.info('Successfully opened file, returning cars json from file')
         with open(json_file_path, 'r', encoding='utf-8') as file:
-            cars = file.readlines()
+            cars = json.load(file)
             return cars
 
     def soup(self):
@@ -263,9 +261,6 @@ class BonBanhCrawler(Crawler):
 def main():
     cr = BonBanhCrawler()
     car = cr.crawl()
-    # print(car)
-    # print(ValidateUsedCars().validate(car))
-
 
 if __name__ == '__main__':
     main()
