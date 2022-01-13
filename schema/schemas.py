@@ -77,16 +77,16 @@ SCHEMA_USED_CARS = {
     "required": [
         "name",
         "source_url",
-        # "origin",
-        # "km_driven",
-        # "external_color",
+        "origin",
+        "km_driven",
+        "external_color",
         "seats",
-        # "engine_capacity",
-        # "fuels",
+        "engine_capacity",
+        "fuels",
         "transmission",
         "wheel_drive",
         "price",
-        # "year"
+        "year"
     ],
     'additionalProperties': False
 }

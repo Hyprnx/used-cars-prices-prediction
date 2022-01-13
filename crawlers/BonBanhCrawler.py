@@ -83,6 +83,7 @@ class BonBanhUsedCarCrawler(BaseClass):
     def _normalize_fuels(self, fuels):
         replacer = {
             'Xăng' : 'gasoline',
+            'Dầu': 'diesel',
             'Diesel' : 'diesel',
             'Hybrid' : 'hybrid',
             'Điện': 'electric'
@@ -92,37 +93,45 @@ class BonBanhUsedCarCrawler(BaseClass):
         return fuels
 
     def extract(self):
-        name_selector = '#car_detail > div.title > h1'
-        name_container = self.soup.select(name_selector)[0].text
-        container_selector = '#mail_parent > div.txt_input > span'
-        container = self.soup.select(container_selector)
-        origin = self._extract_origin(container[0].text)
-        km_driven = self._normalize_km_driven(container[3].text.split(" ")[0])
-        external_color = container[4].text
-        internal_color = container[5].text
-        seats = int(container[6].text.split(' ')[0])
-        fuels_and_engine_capacity_container = container[7].text.split("\t")
-        fuels = self._normalize_fuels(fuels_and_engine_capacity_container[0])
-        engine_capacity = float(fuels_and_engine_capacity_container[1].split(' ')[0])
-        transmission = self._extract_transmission(container[9].text)
-        wheel_drive = container[10].text.split(' ')[0]
-        name, price = self._extract_name_and_price(name_container)
-        car = {
-            'name' : name,
-            'source_url': self.url,
-            'origin' : origin,
-            'km_driven' : km_driven,
-            'external_color': external_color,
-            'internal_color': internal_color,
-            'seats' : seats,
-            'fuels' : fuels,
-            'engine_capacity' : engine_capacity,
-            'transmission': transmission,
-            'wheel_drive': wheel_drive,
-            'price': price
-        }
-        sleep(0.05)
-        return car
+        try:
+            name_selector = '#car_detail > div.title > h1'
+            name_container = self.soup.select(name_selector)[0].text
+            container_selector = '#mail_parent > div.txt_input > span'
+            container = self.soup.select(container_selector)
+            origin = self._extract_origin(container[0].text)
+            km_driven = self._normalize_km_driven(container[3].text.split(" ")[0])
+            external_color = container[4].text
+            internal_color = container[5].text
+            seats = int(container[6].text.split(' ')[0])
+            fuels_and_engine_capacity_container = container[7].text.split("\t")
+            fuels = self._normalize_fuels(fuels_and_engine_capacity_container[0])
+            engine_capacity = float(fuels_and_engine_capacity_container[1].split(' ')[0])
+            transmission = self._extract_transmission(container[9].text)
+            wheel_drive = container[10].text.split(' ')[0]
+            name, price = self._extract_name_and_price(name_container)
+            year_selector = '#wrapper > div.breadcrum > span:nth-child(6) > b > i'
+            year_container = self.soup.select(year_selector)[0].text
+            year = int(year_container.split(' ')[-1])
+
+            car = {
+                'name' : name,
+                'source_url': self.url,
+                'origin' : origin,
+                'km_driven' : km_driven,
+                'external_color': external_color,
+                'internal_color': internal_color,
+                'seats' : seats,
+                'fuels' : fuels,
+                'engine_capacity' : engine_capacity,
+                'transmission': transmission,
+                'wheel_drive': wheel_drive,
+                'price': price,
+                'year': year
+            }
+            sleep(0.05)
+            return car
+        except BaseException:
+            return None
 
 
 class BonBanhCrawler(Crawler):
@@ -232,19 +241,26 @@ class BonBanhCrawler(Crawler):
         validator = ValidateUsedCars()
         self.log.info('Successfully initiate validator')
         cars_links = self._get_cars_link()
-        print(len(cars_links))
         json_file_path = 'data/bonbanh_used_cars.json'
         self.log.info('Trying to open brands file at %s' %json_file_path)
         if is_file_empty(json_file_path):
             self.log.info(f'File at {json_file_path}, is empty, crawling...')
             with open(json_file_path, 'w', encoding='utf-8') as file:
                 cars = []
+                # cars_links = cars_links[:10]    # test with first 10 cars
+                i = 0
                 for i in range(len(cars_links)):
+                    if i % 100 == 0:
+                        self.log.info(f'Crawled {i}')
+                        sleep(5)
                     url = cars_links[i].split('\n')[0]
                     car = BonBanhUsedCarCrawler(url).extract()
                     validate_result = validator.validate(car)
-                    if validate_result:
+                    if validate_result[0]:
                         cars.append(car)
+                    else:
+                        self.log.info(validate_result)
+                    i += 1
 
                 json.dump(cars, file, indent=4, ensure_ascii=False)
                 return cars
@@ -261,6 +277,7 @@ class BonBanhCrawler(Crawler):
 def main():
     cr = BonBanhCrawler()
     car = cr.crawl()
+    print(len(car))
 
 if __name__ == '__main__':
     main()

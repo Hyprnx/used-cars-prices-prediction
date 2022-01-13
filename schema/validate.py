@@ -22,10 +22,9 @@ class Validator(BaseClass):
         try:
             self.log.info('Validating %s' %entry)
             validate(instance=entry, schema=self.SCHEMA)
-            self.log.info('True, OK')
-            return True
+            self.log.info('Entry validated: passed')
+            return True, "OK"
         except ValidationError as e:
-            self.log.info('False', e.message)
             return False, e.message
 
 
