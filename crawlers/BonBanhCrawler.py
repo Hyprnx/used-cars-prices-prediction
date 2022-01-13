@@ -2,6 +2,7 @@ from crawlers.crawler import Crawler
 from bs4 import BeautifulSoup
 from base import BaseClass
 from common.text_normalizer import normalized
+import json
 import requests
 import os
 from pprint import pprint
@@ -9,8 +10,8 @@ import selenium
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
 from time import sleep
+from schema.validate import ValidateUsedCars
 
 
 def is_file_empty(file_path):
@@ -38,23 +39,79 @@ class BonBanhUsedCarCrawler(BaseClass):
         req = requests.get(self.url, headers=HEADERS).text
         self.soup = BeautifulSoup(req, 'lxml')
 
-    def crawl(self):
+    def _replace_all(self, text, dic):
+        for i, j in dic.items():
+            text = text.replace(i, j)
+        return text
+
+    def _extract_name_and_price(self, name):
+        # price in name, so pass in name
+        billion = 'Tỷ'
+        million = 'Triệu'
+        container = name.split('-')
+        price = container[-1][1:]
+        price = price.replace(billion, '1000000000')
+        price = price.replace(million, '1000000')
+        price = price.split(' ')
+        price = [i for i in price if i]
+        price = [int(i) for i in price]
+        try:
+            price = price[0]* price[1] + price[2]* price[3]
+        except IndexError:
+            price = price[0] * price[1]
+        name_container = normalized(container[0])
+        name = name_container[3:]
+        return name, price
+
+    def _extract_origin(self, origin_container):
+        replacer = {
+            'Nhập khẩu': 'imported',
+            'Lắp ráp trong nước' : 'domestic'
+        }
+        origin = self._replace_all(origin_container,replacer)
+        return origin
+
+    def _extract_transmission(self, transmission_container):
+        replacer = {
+            'Số tự động': 'automatic',
+            'Số tay' : 'manual'
+        }
+        origin = self._replace_all(transmission_container,replacer)
+        return origin
+
+    def _normalize_km_driven(self, km_driven):
+        return int(km_driven.replace(',',""))
+
+    def _normalize_fuels(self, fuels):
+        replacer = {
+            'Xăng' : 'gasoline',
+            'Diesel' : 'diesel',
+            'Hybrid' : 'hybrid',
+            'Điện': 'electric'
+        }
+        fuels = self._replace_all(fuels, replacer)
+
+        return fuels
+
+    def extract(self):
         name_selector = '#car_detail > div.title > h1'
-        name = normalized(self.soup.select(name_selector)[0].text)
+        name_container = self.soup.select(name_selector)[0].text
         container_selector = '#mail_parent > div.txt_input > span'
         container = self.soup.select(container_selector)
-        origin = container[0].text
-        km_driven = container[3].text.split(" ")[0]
+        origin = self._extract_origin(container[0].text)
+        km_driven = self._normalize_km_driven(container[3].text.split(" ")[0])
         external_color = container[4].text
         internal_color = container[5].text
-        seats = container[6].text.split(' ')[0]
+        seats = int(container[6].text.split(' ')[0])
         fuels_and_engine_capacity_container = container[7].text.split("\t")
-        fuels = fuels_and_engine_capacity_container[0]
-        engine_capacity = fuels_and_engine_capacity_container[1].split(' ')[0]
-        transmission = container[9].text
+        fuels = self._normalize_fuels(fuels_and_engine_capacity_container[0])
+        engine_capacity = float(fuels_and_engine_capacity_container[1].split(' ')[0])
+        transmission = self._extract_transmission(container[9].text)
         wheel_drive = container[10].text.split(' ')[0]
+        name, price = self._extract_name_and_price(name_container)
         car = {
             'name' : name,
+            'source_url': self.url,
             'origin' : origin,
             'km_driven' : km_driven,
             'external_color': external_color,
@@ -63,9 +120,10 @@ class BonBanhUsedCarCrawler(BaseClass):
             'fuels' : fuels,
             'engine_capacity' : engine_capacity,
             'transmission': transmission,
-            'wheel_drive': wheel_drive
+            'wheel_drive': wheel_drive,
+            'price': price
         }
-
+        sleep(0.05)
         return car
 
 
@@ -89,7 +147,7 @@ class BonBanhCrawler(Crawler):
         file_path = 'data/brands_link.txt'
         self.log.info('Trying to open brands file at %s' %file_path)
         if is_file_empty(file_path):
-            with open(file_path, 'w') as file:
+            with open(file_path, 'w', encoding='utf-8') as file:
                 self.log.info('File is empty, crawling brands...')
                 selector = '#primary-nav'
                 brands = []
@@ -104,7 +162,7 @@ class BonBanhCrawler(Crawler):
                 file.write('\n'.join(brands))
                 return brands
         self.log.info('Successfully opened file, getting brands from file')
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding='utf-8') as file:
             brands = file.readlines()
             return brands
 
@@ -128,7 +186,7 @@ class BonBanhCrawler(Crawler):
         file_path = 'data/cars_links.txt'
         self.log.info('Trying to open brands file at %s' %file_path)
         if is_file_empty(file_path):
-            with open(file_path, 'w') as file:
+            with open(file_path, 'w', encoding='utf-8') as file:
                 self.log.info('File is empty, crawling brands...')
                 used_car_links = []
                 links = self._get_brand()
@@ -167,19 +225,46 @@ class BonBanhCrawler(Crawler):
                 return used_car_links
 
         self.log.info('Successfully opened file, getting cars links from file')
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding='utf-8') as file:
             cars_links = file.readlines()
             return cars_links
 
+
+    def crawl(self):
+        validator = ValidateUsedCars()
+        self.log.info('Successfully initiate validator')
+        cars_links = self._get_cars_link()
+        json_file_path = 'data/bonbanh_used_cars.json'
+        self.log.info('Trying to open brands file at %s' %json_file_path)
+        if is_file_empty(json_file_path):
+            self.log.info(f'File at {json_file_path}, is empty, crawling...')
+            with open(json_file_path, 'w', encoding='utf-8') as file:
+                cars = []
+                for i in range(10):
+                    url = cars_links[i].split('\n')[0]
+                    car = BonBanhUsedCarCrawler(url).extract()
+                    # pprint(car)
+                    validate_result = validator.validate(car)
+                    if validate_result:
+                        cars.append(car)
+
+                json.dump(cars, file, indent=4, ensure_ascii=False)
+                return cars
+
+        self.log.info('Successfully opened file, returning cars json from file')
+        with open(json_file_path, 'r', encoding='utf-8') as file:
+            cars = file.readlines()
+            return cars
 
     def soup(self):
         return self.soup().prettify()
 
 
-
 def main():
     cr = BonBanhCrawler()
-    cr._get_cars_link()
+    car = cr.crawl()
+    # print(car)
+    # print(ValidateUsedCars().validate(car))
 
 
 if __name__ == '__main__':
