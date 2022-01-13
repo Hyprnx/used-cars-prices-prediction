@@ -232,16 +232,16 @@ class BonBanhCrawler(Crawler):
         validator = ValidateUsedCars()
         self.log.info('Successfully initiate validator')
         cars_links = self._get_cars_link()
+        print(len(cars_links))
         json_file_path = 'data/bonbanh_used_cars.json'
         self.log.info('Trying to open brands file at %s' %json_file_path)
         if is_file_empty(json_file_path):
             self.log.info(f'File at {json_file_path}, is empty, crawling...')
             with open(json_file_path, 'w', encoding='utf-8') as file:
                 cars = []
-                for i in range(10):
+                for i in range(len(cars_links)):
                     url = cars_links[i].split('\n')[0]
                     car = BonBanhUsedCarCrawler(url).extract()
-                    # pprint(car)
                     validate_result = validator.validate(car)
                     if validate_result:
                         cars.append(car)
