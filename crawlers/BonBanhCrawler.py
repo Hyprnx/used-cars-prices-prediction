@@ -107,7 +107,7 @@ class BonBanhUsedCarCrawler(BaseClass):
             fuels = self._normalize_fuels(fuels_and_engine_capacity_container[0])
             engine_capacity = float(fuels_and_engine_capacity_container[1].split(' ')[0])
             transmission = self._extract_transmission(container[9].text)
-            wheel_drive = container[10].text.split(' ')[0]
+            wheel_drive = container[10].text.split(' ')[0].replace('RFD', "RWD")
             name, price = self._extract_name_and_price(name_container)
             year_selector = '#wrapper > div.breadcrum > span:nth-child(6) > b > i'
             year_container = self.soup.select(year_selector)[0].text
@@ -131,7 +131,7 @@ class BonBanhUsedCarCrawler(BaseClass):
             sleep(0.05)
             return car
         except BaseException:
-            return None
+            return {'car_failed':None}
 
 
 class BonBanhCrawler(Crawler):
@@ -246,7 +246,6 @@ class BonBanhCrawler(Crawler):
         if is_file_empty(json_file_path):
             self.log.info(f'File at {json_file_path}, is empty, crawling...')
             with open(json_file_path, 'w', encoding='utf-8') as file:
-                cars = []
                 # cars_links = cars_links[:10]    # test with first 10 cars
                 i = 0
                 for i in range(len(cars_links)):
@@ -257,18 +256,24 @@ class BonBanhCrawler(Crawler):
                     car = BonBanhUsedCarCrawler(url).extract()
                     validate_result = validator.validate(car)
                     if validate_result[0]:
-                        cars.append(car)
+                        self.crawled_items.append(car)
                     else:
+                        self.failed_item.append(car)
                         self.log.info(validate_result)
                     i += 1
 
-                json.dump(cars, file, indent=4, ensure_ascii=False)
-                return cars
+                json.dump(self.crawled_items, file, indent=4, ensure_ascii=False)
+                failed_item_path = 'data/bonbanh_failed_items.json'
+                with open(failed_item_path, 'w', encoding='utf-8') as failed_file:
+                    json.dump(self.failed_item, failed_file, indent=4, ensure_ascii=False)
+                return self.crawled_items, self.failed_item
 
         self.log.info('Successfully opened file, returning cars json from file')
         with open(json_file_path, 'r', encoding='utf-8') as file:
             cars = json.load(file)
-            return cars
+        with open('data/bonbanh_failed_items.json', 'r', encoding='utf-8') as failfile:
+            failed_cars = json.load(failfile)
+            return cars, failed_cars
 
     def soup(self):
         return self.soup().prettify()
@@ -277,7 +282,12 @@ class BonBanhCrawler(Crawler):
 def main():
     cr = BonBanhCrawler()
     car = cr.crawl()
-    print(len(car))
+    print(len(car[0]))
+    print(len(car[1]))
+
+    # url = 'https://bonbanh.com/xe-ford-everest-sport-2.0l-4x2-at-2021-4078903'
+    # cr = BonBanhUsedCarCrawler(url).extract()
+    # print(cr)
 
 if __name__ == '__main__':
     main()
