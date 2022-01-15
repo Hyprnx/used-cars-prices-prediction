@@ -251,6 +251,12 @@ class BonBanhCrawler(Crawler):
                 for i in range(len(cars_links)):
                     if i % 100 == 0:
                         self.log.info(f'Crawled {i}')
+                        successful_item_length = len(self.crawled_items)
+                        perf = successful_item_length/(successful_item_length + failed_item_length) * 100
+                        failed_item_length = len(self.failed_item)
+                        failed_perf = 100 - perf
+                        self.log.info(f'Successful: {successful_item_length}, took: {perf} %')
+                        self.log.info(f'Failed: {failed_item_length}, took: {failed_perf} %')
                         sleep(5)
                     url = cars_links[i].split('\n')[0]
                     car = BonBanhUsedCarCrawler(url).extract()
