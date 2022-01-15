@@ -291,9 +291,5 @@ def main():
     print(len(car[0]))
     print(len(car[1]))
 
-    # url = 'https://bonbanh.com/xe-ford-everest-sport-2.0l-4x2-at-2021-4078903'
-    # cr = BonBanhUsedCarCrawler(url).extract()
-    # print(cr)
-
 if __name__ == '__main__':
     main()
