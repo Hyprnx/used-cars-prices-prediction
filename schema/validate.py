@@ -22,7 +22,8 @@ class Validator(BaseClass):
         try:
             self.log.info('Validating %s' %entry)
             validate(instance=entry, schema=self.SCHEMA)
-            return True, 'OK'
+            self.log.info('Entry validated: passed')
+            return True, "OK"
         except ValidationError as e:
             return False, e.message
 
@@ -45,7 +46,11 @@ def main():
         "id": "ford_mustang",
         "source": "https://bonbanh.com",
         "source_url": 'https://bonbanh.com/xe-mercedes_benz-c_class-c200-2016-4163071',
-        "contacts": seller
+        "contacts": seller,
+        'transmission': 'automatic',
+        'price': 123456789,
+        'wheel_drive': 'FWD',
+        'seats': 4
     }
 
     validator = ValidateUsedCars()

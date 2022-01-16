@@ -11,7 +11,8 @@ class Crawler(BaseClass):
     def __init__(self):
         super().__init__()
         self.crawled_items = []
-        self.cnt_crawled_items = 0
+        self.failed_item = []
+
 
 
     def validate_crawled(self, item):

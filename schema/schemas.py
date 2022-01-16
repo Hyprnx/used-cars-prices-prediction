@@ -34,7 +34,8 @@ SCHEMA_USED_CARS = {
         },
         "contacts": SCHEMA_CONTACTS,
         'origin':{
-            'type': 'string'
+            'type': 'string',
+            'pattern': 'import|domestic'
         },
         'km_driven':{
             'type': 'number'
@@ -46,38 +47,46 @@ SCHEMA_USED_CARS = {
             'type': 'string'
         },
         'seats':{
-            'type': 'integer'
+            'type': 'number'
         },
         'engine_capacity':{
             'type': 'number'
         },
-        'fuel':{
-            'type': 'string'
-        #    Gasoline or Diesel
+        'fuels':{
+            'type': 'string',
+            'pattern': 'gasoline|diesel|hybrid|electric'
+        #    Gasoline, Diesel, Hybrid or Electric
         },
         'transmission': {
-            'type': 'string'
+            'type': 'string',
+            'pattern': 'automatic|manual'
         #    Manual or Automatic
         },
         'wheel_drive':{
-            'type': 'string'
+            'type': 'string',
+            'pattern': 'FWD|RWD|AWD|4WD'
         },
-
-
+        'price':{
+            'type': 'number'
+        },
+        'year': {
+            'type': 'number'
+        },
 
     },
     "required": [
         "name",
         "source_url",
-        "contacts",
         "origin",
         "km_driven",
-        "internal_color",
         "external_color",
         "seats",
         "engine_capacity",
-        "fuel",
+        "fuels",
         "transmission",
-        "wheel_drive"
-    ]
+        "wheel_drive",
+        "price",
+        "year"
+    ],
+    'additionalProperties': False
 }
