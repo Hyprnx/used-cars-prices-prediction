@@ -26,32 +26,37 @@ class ExtractSanXeTotUsedCar(BaseClass):
         return name.text
 
 
-prefix = 'https://www.sanxehot.vn/'
-index = [i for i in range(1, 786)]
-url = 'https://www.sanxehot.vn/mua-ban-xe/loai-xe-cu-pg'
-links_list = [url + str(i) for i in index]
-car_link = []
-num = 0
+class ExtractSanXeTotLink:
+    def __init__(self):
+        self.prefix = 'https://www.sanxehot.vn/'
+        self.index = [i for i in range(1, 786)]
+        self.url_list = ['https://www.sanxehot.vn/mua-ban-xe/loai-xe-cu-pg' + str(i) for i in self.index]
+        self.car_link = []
+        self.num = 0
 
-for link in links_list:
-    req = requests.get(link, headers=HEADERS).text
-    soup = BeautifulSoup(req, 'lxml')
-    lis = soup.findAll('li', attrs={'class': 'cars'})
+    def extract_link(self):
+        for link in self.url_list:
+            req = requests.get(link, headers=HEADERS).text
+            soup = BeautifulSoup(req, 'lxml')
+            lis = soup.findAll('li', attrs={'class': 'cars'})
 
-    for i in lis:
-        num += 1
-        div_container = i.find('div', attrs={'class': 'col m8'})
-        a = div_container.find('a')
-        car_link.append(prefix + a['href'])
-        print(num)
+            for i in lis:
+                self.num += 1
+                div_container = i.find('div', attrs={'class': 'col m8'})
+                a = div_container.find('a')
+                self.car_link.append(self.prefix + a['href'])
+                print(self.num)
 
-print(car_link)
+        return self.car_link
 
 
 def main():
-    f = open("test_file.txt", "w+")
-    f.write('\n'.join(car_link))
+    car_link = ExtractSanXeTotLink().extract_link()
+    print('\n'.join(car_link))
+    with open("sanxehot_link.txt", "w+") as f:
+        f.write('\n'.join(car_link))
 
 
 if __name__ == '__main__':
     main()
+
