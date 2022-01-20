@@ -31,14 +31,11 @@ index = [i for i in range(1, 786)]
 url = 'https://www.sanxehot.vn/mua-ban-xe/loai-xe-cu-pg'
 links_list = [url + str(i) for i in index]
 car_link = []
-
 num = 0
+
 for link in links_list:
-    request_url = link
-
-    req = requests.get(request_url, headers=HEADERS).text
+    req = requests.get(link, headers=HEADERS).text
     soup = BeautifulSoup(req, 'lxml')
-
     lis = soup.findAll('li', attrs={'class': 'cars'})
 
     for i in lis:
@@ -46,15 +43,13 @@ for link in links_list:
         div_container = i.find('div', attrs={'class': 'col m8'})
         a = div_container.find('a')
         car_link.append(prefix + a['href'])
-
-        extractor = ExtractSanXeTotUsedCar(car_link[-1])
-        print(num, extractor.get_name())
+        print(num)
 
 print(car_link)
 
 
 def main():
-    f = open("sanxehot_link.txt", "w+")
+    f = open("test_file.txt", "w+")
     f.write('\n'.join(car_link))
 
 
