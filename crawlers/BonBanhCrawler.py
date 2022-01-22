@@ -4,7 +4,7 @@ from base import BaseClass
 from common.text_normalizer import normalized
 import json
 import requests
-import os
+from common.check_file_empty import is_file_empty
 from pprint import pprint
 import selenium
 from selenium.common.exceptions import NoSuchElementException
@@ -12,11 +12,6 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 from time import sleep
 from schema.validate import ValidateUsedCars
-
-
-def is_file_empty(file_path):
-    """ Check if file is empty by confirming if its size is 0 bytes"""
-    return os.path.isfile(file_path) and os.path.getsize(file_path) == 0
 
 
 HEADERS = {
