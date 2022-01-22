@@ -52,19 +52,18 @@ class Crawl:
         return fuels
 
     def _process_car(self, car):
-        car['prices'] = self._price_process(car['prices'])
-        car['origin'] = self._extract_origin(car['origin'])
-        car['transmission'] = self._extract_transmission(car['transmission'])
-        car['fuel'] = self._extract_fuels(car['fuel'])
-        try:
-            car['km_driven'] = int(car['km_driven'])
-        except:
-            pass
+        if not car['prices'] or not car['km_driven']:
+            return None
+        else:
+            car['prices'] = self._price_process(car['prices'])
+            car['origin'] = self._extract_origin(car['origin'])
+            car['transmission'] = self._extract_transmission(car['transmission'])
+            car['fuel'] = self._extract_fuels(car['fuel'])
 
         return car
 
     def crawl_all_pages(self):
-        url_list = ['{}?page={}'.format(self.base_url, str(page)) for page in range(1, 5)]
+        url_list = ['{}?page={}'.format(self.base_url, str(page)) for page in range(700, 1000)] #range of pages
         return url_list
 
     def crawl_href(self, url):
