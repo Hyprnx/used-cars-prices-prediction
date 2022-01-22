@@ -25,11 +25,11 @@ class OtoCrawl:
 
         return df
 
-    def add_to_csv(self, i, df):
+    def add_to_csv(self, i, df, file_name):
         if i == 1:
-            df.to_csv('oto_comvn_href.csv', index=False)
+            df.to_csv(file_name, index=False)
         else:
-            df.to_csv('oto_comvn_href.csv', mode='a', index=False, header=False)
+            df.to_csv(file_name, mode='a', index=False, header=False)
 
 
 base_url = 'https://oto.com.vn'
@@ -40,4 +40,4 @@ oto = OtoCrawl(base_url)
 for i in range(1, 102):
     url = '{}/p{}'.format(toyota_url, i)
     df = oto.crawl_href(url)
-    oto.add_to_csv(i, df)
+    oto.add_to_csv(i, df, 'oto_comvn_href.csv')

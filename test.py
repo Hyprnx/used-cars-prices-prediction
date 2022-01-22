@@ -1,5 +1,10 @@
-string = 'A B C D'
+import re
 
-ls = [1, 2, 3, 4]
-ls.append(5, 6, 7)
-print(ls)
+string = 'B C D'
+
+pattern = re.compile('A')
+
+if pattern.findall(string):
+    print('True')
+else:
+    print('False')

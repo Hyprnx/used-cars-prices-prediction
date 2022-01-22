@@ -4,6 +4,8 @@ import pandas as pd
 from oto_comvn_class import OtoCrawl
 import re
 
+base_url = 'https://oto.com.vn'
+
 
 def _replace_all(text):
     list = ['Năm sản xuất', 'Kiểu dáng', 'Tình trạng', 'Xuất xứ', 'Số km đã đi', 'Tỉnh thành', 'Hộp số', 'Nhiên liệu']
@@ -18,14 +20,16 @@ df = pd.DataFrame(columns=["name", "source_url", "origin", "km_driven",
                            "price", "year"])
 
 
-base_url = 'https://oto.com.vn'
-toyota_url = 'https://oto.com.vn/mua-ban-xe-toyota'
-
 href_df = pd.read_csv('oto_comvn_href.csv')
 
-car = {}
+crawl = OtoCrawl(base_url=base_url)
+
+p = 1
 
 for href in href_df['href']:
+
+    output = pd.DataFrame()
+    car = {}
 
     html_text = requests.get(href)
     # soup = bs(html_text, 'html.parser')
@@ -35,9 +39,10 @@ for href in href_df['href']:
     box_detail = soup.find('div', class_='box-detail-listing', id='box-detail')
 
     price = box_detail.find('input', id='price')['value']
+    seats = box_detail.find('input', id='numberOfSeat')['value']
+
     car['price'] = price
     car['source_url'] = href
-    seats = box_detail.find('input', id='numberOfSeat')['value']
     car['seats'] = seats
     # year = box_detail.find('input', id='year')['value']
     # typeOfCar = box_detail.find('input', id='classificationName')['value']
@@ -45,7 +50,6 @@ for href in href_df['href']:
     group_title_detail = soup.find('div', class_='group-title-detail')
     name = group_title_detail.find('h1').string
     car['name'] = name
-    car['source_url'] = href
 
     box_info_detail = soup.find('div', class_='box-info-detail')
     li = box_info_detail.find_all('li')
@@ -53,15 +57,32 @@ for href in href_df['href']:
 
     for l in li:
         txt = _replace_all(l.text.strip())
+        # if re.compile('')
         info.append(txt)
 
     keys = ['year', 'typeOfCar', 'condition', 'origin', 'km_driven',
             'city', 'transmission', 'fuels']
 
-    for i in range(8):
-        car[keys[i]] = info[i]
+    try:
+        for i in range(8):
+            car[keys[i]] = info[i]
 
-    print(car)
+        print(car)
+
+        output = output.append(car, ignore_index=True)
+
+    except:
+        print(href)
+
+    crawl.add_to_csv(p, output, 'car_data.csv')
+    p += 1
+
+
+
+
+
+
+
 
 
 
