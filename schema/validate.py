@@ -3,7 +3,7 @@ import logging
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
 
-from schema.schemas import SCHEMA_USED_CARS
+from schema.schemas import SCHEMA_USED_CARS, SCHEMA_USED_CARS_FINAL
 
 from base import BaseClass
 
@@ -30,6 +30,13 @@ class Validator(BaseClass):
 
 class ValidateUsedCars(Validator):
     SCHEMA = SCHEMA_USED_CARS
+
+    def __init__(self):
+        super().__init__()
+
+
+class ValidateFinalUsedCars(Validator):
+    SCHEMA = SCHEMA_USED_CARS_FINAL
 
     def __init__(self):
         super().__init__()

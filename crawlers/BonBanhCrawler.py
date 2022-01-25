@@ -2,6 +2,7 @@ from crawlers.crawler import Crawler
 from bs4 import BeautifulSoup
 from base import BaseClass
 from common.text_normalizer import normalized
+from common.normalize_price import replace_all
 import json
 import requests
 from common.check_file_empty import is_file_empty
@@ -91,6 +92,23 @@ class BonBanhUsedCarCrawler(BaseClass):
 
         return brand
 
+    def normalize_type(self,type):
+        type = type.lower()
+        replacer = {
+            'crossover':'crossover',
+            'suv': 'suv',
+            'sedan':'sedan',
+            'convertible/cabriolet': 'convertible',
+            'coupe': 'coupe',
+            'hatchback': 'hatchback',
+            'van/minivan': 'van',
+            'bán tải / pickup': 'pickup',
+            'wagon':'wagon'
+        }
+        type = replace_all(replacer,type)
+
+        return type
+
     def extract(self):
         try:
             name_selector = '#car_detail > div.title > h1'
@@ -111,7 +129,7 @@ class BonBanhUsedCarCrawler(BaseClass):
             year_selector = '#wrapper > div.breadcrum > span:nth-child(6) > b > i'
             year_container = self.soup.select(year_selector)[0].text
             year = int(year_container.split(' ')[-1])
-            type = container[2].text.lower()
+            type = container[2].text
             brand = self._get_brand(name)
             car = {
                 'name' : name,
@@ -127,7 +145,7 @@ class BonBanhUsedCarCrawler(BaseClass):
                 'wheel_drive': wheel_drive,
                 'price': price,
                 'year': year,
-                'type': type,
+                'type': self.normalize_type(type),
                 'brand': brand
             }
             sleep(0.4)
