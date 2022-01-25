@@ -2,9 +2,10 @@ from crawlers.crawler import Crawler
 from bs4 import BeautifulSoup
 from base import BaseClass
 from common.text_normalizer import normalized
+from common.normalize_price import replace_all
 import json
 import requests
-import os
+from common.check_file_empty import is_file_empty
 from pprint import pprint
 import selenium
 from selenium.common.exceptions import NoSuchElementException
@@ -12,22 +13,7 @@ from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 from time import sleep
 from schema.validate import ValidateUsedCars
-
-
-def is_file_empty(file_path):
-    """ Check if file is empty by confirming if its size is 0 bytes"""
-    return os.path.isfile(file_path) and os.path.getsize(file_path) == 0
-
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) "
-                  "Gecko/20100101 Firefox/46.0",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Connection": "keep-alive",
-    "Cache-Control": "max-age=0"
-}
-
+from common.headers import HEADERS
 
 class BonBanhUsedCarCrawler(BaseClass):
     def __init__(self, url):
@@ -64,6 +50,7 @@ class BonBanhUsedCarCrawler(BaseClass):
     def _extract_origin(self, origin_container):
         replacer = {
             'Nhập khẩu': 'imported',
+            'nhập khẩu': 'imported',
             'Lắp ráp trong nước' : 'domestic'
         }
         origin = self._replace_all(origin_container,replacer)
@@ -92,6 +79,36 @@ class BonBanhUsedCarCrawler(BaseClass):
 
         return fuels
 
+    def _get_brand(self, name):
+        brand = name.split(' ')[0]
+        replacer = {
+            'rolls': 'rolls_royce',
+            'alfa': 'alfa_romeo',
+            'aston': 'aston_martin',
+            'mercedes': 'mercedes_benz'
+        }
+        for old, new in replacer.items():
+            name = name.replace(old, new)
+
+        return brand
+
+    def normalize_type(self,type):
+        type = type.lower()
+        replacer = {
+            'crossover':'crossover',
+            'suv': 'suv',
+            'sedan':'sedan',
+            'convertible/cabriolet': 'convertible',
+            'coupe': 'coupe',
+            'hatchback': 'hatchback',
+            'van/minivan': 'van',
+            'bán tải / pickup': 'pickup',
+            'wagon':'wagon'
+        }
+        type = replace_all(replacer,type)
+
+        return type
+
     def extract(self):
         try:
             name_selector = '#car_detail > div.title > h1'
@@ -112,7 +129,8 @@ class BonBanhUsedCarCrawler(BaseClass):
             year_selector = '#wrapper > div.breadcrum > span:nth-child(6) > b > i'
             year_container = self.soup.select(year_selector)[0].text
             year = int(year_container.split(' ')[-1])
-
+            type = container[2].text
+            brand = self._get_brand(name)
             car = {
                 'name' : name,
                 'source_url': self.url,
@@ -126,11 +144,14 @@ class BonBanhUsedCarCrawler(BaseClass):
                 'transmission': transmission,
                 'wheel_drive': wheel_drive,
                 'price': price,
-                'year': year
+                'year': year,
+                'type': self.normalize_type(type),
+                'brand': brand
             }
-            sleep(0.05)
+            sleep(0.4)
             return car
-        except BaseException:
+        except BaseException as e:
+            self.log.info(e)
             return {'car_failed':None}
 
 
@@ -151,7 +172,7 @@ class BonBanhCrawler(Crawler):
 
 
     def _get_brand(self):
-        file_path = 'data/brands_link.txt'
+        file_path = 'data/bonbanh_brands_link.txt'
         self.log.info('Trying to open brands file at %s' %file_path)
         if is_file_empty(file_path):
             with open(file_path, 'w', encoding='utf-8') as file:
@@ -190,7 +211,7 @@ class BonBanhCrawler(Crawler):
 
 
     def _get_cars_link(self):
-        file_path = 'data/cars_links.txt'
+        file_path = 'data/bonbanh_cars_links.txt'
         self.log.info('Trying to open brands file at %s' %file_path)
         if is_file_empty(file_path):
             with open(file_path, 'w', encoding='utf-8') as file:
@@ -249,17 +270,23 @@ class BonBanhCrawler(Crawler):
                 # cars_links = cars_links[:10]    # test with first 10 cars
                 i = 0
                 for i in range(len(cars_links)):
+
                     if i % 100 == 0:
                         self.log.info(f'Crawled {i}')
                         successful_item_length = len(self.crawled_items)
-                        perf = successful_item_length/(successful_item_length + failed_item_length) * 100
                         failed_item_length = len(self.failed_item)
+                        perf = successful_item_length/(successful_item_length + failed_item_length + 1) * 100
                         failed_perf = 100 - perf
                         self.log.info(f'Successful: {successful_item_length}, took: {perf} %')
                         self.log.info(f'Failed: {failed_item_length}, took: {failed_perf} %')
                         sleep(5)
                     url = cars_links[i].split('\n')[0]
-                    car = BonBanhUsedCarCrawler(url).extract()
+                    try:
+                        car = BonBanhUsedCarCrawler(url).extract()
+                    except TimeoutError:
+                        sleep(10)
+                        self.log.info('TIME OUT TIME OUT TIME OUT')
+                        car = BonBanhUsedCarCrawler(url).extract()
                     validate_result = validator.validate(car)
                     if validate_result[0]:
                         self.crawled_items.append(car)
@@ -267,6 +294,7 @@ class BonBanhCrawler(Crawler):
                         self.failed_item.append(car)
                         self.log.info(validate_result)
                     i += 1
+
 
                 json.dump(self.crawled_items, file, indent=4, ensure_ascii=False)
                 failed_item_path = 'data/bonbanh_failed_items.json'

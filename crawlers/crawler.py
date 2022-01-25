@@ -14,7 +14,6 @@ class Crawler(BaseClass):
         self.failed_item = []
 
 
-
     def validate_crawled(self, item):
         # validate using schema in schema folder
         raise NotImplementedError

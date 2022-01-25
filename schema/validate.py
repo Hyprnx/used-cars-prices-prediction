@@ -3,7 +3,7 @@ import logging
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
 
-from schema.schemas import SCHEMA_USED_CARS
+from schema.schemas import SCHEMA_USED_CARS, SCHEMA_USED_CARS_FINAL
 
 from base import BaseClass
 
@@ -35,6 +35,13 @@ class ValidateUsedCars(Validator):
         super().__init__()
 
 
+class ValidateFinalUsedCars(Validator):
+    SCHEMA = SCHEMA_USED_CARS_FINAL
+
+    def __init__(self):
+        super().__init__()
+
+
 def main():
     seller = {
         'name': 'To Duc Anh',
@@ -42,15 +49,21 @@ def main():
     }
 
     cars_sample = {
-        'name': 'Ford Mustang',
-        "id": "ford_mustang",
-        "source": "https://bonbanh.com",
-        "source_url": 'https://bonbanh.com/xe-mercedes_benz-c_class-c200-2016-4163071',
-        "contacts": seller,
-        'transmission': 'automatic',
-        'price': 123456789,
-        'wheel_drive': 'FWD',
-        'seats': 4
+            "name": "toyota vios 1 5g 2010",
+            "source_url": "https://bonbanh.com/xe-toyota-vios-1.5g-2010-3996371",
+            "origin": "domestic",
+            "km_driven": 12000,
+            "external_color": "Bạc",
+            "internal_color": "Đen",
+            "seats": 4,
+            "fuels": "gasoline",
+            "engine_capacity": 1.5,
+            "transmission": "automatic",
+            "wheel_drive": "FWD",
+            "price": 290000000,
+            "year": 2010,
+            "type": "sedan",
+            "brand": "toyota"
     }
 
     validator = ValidateUsedCars()
