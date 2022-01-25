@@ -92,7 +92,6 @@ SCHEMA_USED_CARS = {
         "type",
         "origin",
         "km_driven",
-        "external_color",
         "seats",
         "fuels",
         "transmission",
