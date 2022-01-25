@@ -87,6 +87,7 @@ SCHEMA_USED_CARS = {
     },
     "required": [
         "name",
+        "brand"
         "source_url",
         "type",
         "origin",
@@ -172,6 +173,7 @@ SCHEMA_USED_CARS_FINAL = {
     },
     "required": [
         "name",
+        "brand",
         "source_url",
         "type",
         "origin",

@@ -218,7 +218,7 @@ class XeTotCrawler(Crawler):
             return self.links
 
     def crawl(self):
-        used_car_path = 'data/chotot_used_car.json'
+        used_car_path = 'data/xetot_used_car.json'
         self.log.info('Trying to open brands file at %s' %used_car_path)
         if is_file_empty(used_car_path):
             self.log.info(f'File at {used_car_path}, is empty, crawling...')
@@ -236,7 +236,7 @@ class XeTotCrawler(Crawler):
                         self.failed_item.append(car)
 
                 json.dump(self.crawled_items, file, indent=4, ensure_ascii=False)
-                failed_item_path = 'data/chotot_failed_item.json'
+                failed_item_path = 'data/xetot_failed_item.json'
                 with open(failed_item_path, 'w', encoding='utf-8') as failed_file:
                     json.dump(self.failed_item, failed_file, indent=4, ensure_ascii=False)
                 return self.crawled_items
