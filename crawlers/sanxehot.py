@@ -1,3 +1,4 @@
+import json
 import requests
 from bs4 import BeautifulSoup
 from base import BaseClass
@@ -11,6 +12,8 @@ HEADERS = {
     "Connection": "keep-alive",
     "Cache-Control": "max-age=0"
 }
+
+path = '/Users/minhkhoa/Documents/used-cars-prices-prediction/data/sanxehot/'
 
 
 class ExtractSanXeTotUsedCar(BaseClass):
@@ -26,37 +29,42 @@ class ExtractSanXeTotUsedCar(BaseClass):
         return name.text
 
 
-class ExtractSanXeTotLink:
+class ExtractSanXeTotLink(BaseClass):
     def __init__(self):
-        self.prefix = 'https://www.sanxehot.vn/'
+        super().__init__()
+        self.prefix = 'https://www.sanxehot.vn'
         self.index = [i for i in range(1, 786)]
         self.url_list = ['https://www.sanxehot.vn/mua-ban-xe/loai-xe-cu-pg' + str(i) for i in self.index]
-        self.car_link = []
-        self.num = 0
 
     def extract_link(self):
+        dictionary = {}
         for link in self.url_list:
+            self.log.info('Extracting %s' % link)
             req = requests.get(link, headers=HEADERS).text
             soup = BeautifulSoup(req, 'lxml')
-            lis = soup.findAll('li', attrs={'class': 'cars'})
+            # lis = soup.findAll('li', attrs={'class': 'cars'})
+            table_selector = 'body > main > div.section > div > div > div.col.m7.s12 > div > div > section.car > ul'
+            lis = soup.select(table_selector)[0].find_all('li')
+            li_len = len(lis)
+            for i in range(1, li_len + 1):
+                link_selector = f'body > main > div.section > div > div > div.col.m7.s12 > div > div > section.car > ul > li:nth-child({i}) > div:nth-child(1) > div.col.m8 > h2 > a'
+                link = self.prefix + soup.select(link_selector)[0]['href']
 
-            for i in lis:
-                self.num += 1
-                div_container = i.find('div', attrs={'class': 'col m8'})
-                a = div_container.find('a')
-                self.car_link.append(self.prefix + a['href'])
-                print(self.num)
+                type_selector = f'body > main > div.section > div > div > div.col.m7.s12 > div > div > section.car > ul > li:nth-child({i}) > div:nth-child(2) > div.col.m8.s12 > table > tbody > tr:nth-child(2) > td'
+                type_ = soup.select(type_selector)[0].text
 
-        return self.car_link
+                dictionary[link] = {'url': link,
+                                    'type': type_}
+
+        return dictionary
 
 
 def main():
     car_link = ExtractSanXeTotLink().extract_link()
     print('\n'.join(car_link))
-    with open("sanxehot_link.txt", "w+") as f:
-        f.write('\n'.join(car_link))
+    with open(path + "sanxehot_links.json", "w+") as f:
+        f.write(json.dumps(car_link, indent=4))
 
 
 if __name__ == '__main__':
     main()
-
