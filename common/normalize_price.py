@@ -3,6 +3,7 @@ def replace_all(replacer, value):
         value = value.replace(old, new)
     return value
 
+
 def normalize_price(price):
     billion = {'Tỷ': '1000000000',
                'tỷ': '1000000000',
