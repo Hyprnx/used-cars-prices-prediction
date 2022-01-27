@@ -1,18 +1,15 @@
 from base import BaseClass
-from common.text_normalizer import normalized
 from common.check_file_empty import is_file_empty
 from common.normalize_price import replace_all
 from common.headers import HEADERS
 from crawlers.crawler import Crawler
 from schema.validate import ValidateUsedCars
-from pprint import pprint
-from time import sleep
 import json
 import requests
 from bs4 import BeautifulSoup
 
 class XeTotUsedCarExtractor(BaseClass):
-    def __init__(self,url):
+    def __init__(self, url):
         super().__init__()
         self.url = url.split('\n')[0]
         self.source = 'https://xetot.com'

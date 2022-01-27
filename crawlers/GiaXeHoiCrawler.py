@@ -1,28 +1,15 @@
 from crawlers.crawler import Crawler
-from bs4 import BeautifulSoup
-from base import BaseClass
-from common.text_normalizer import normalized
 from common.normalize_price import replace_all
 import json
 import requests
 from common.check_file_empty import is_file_empty
-from pprint import pprint
-import selenium
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver import Chrome
-from selenium.webdriver.chrome.options import Options
-from time import sleep
-from schema.validate import ValidateUsedCars
 from common.headers import HEADERS
-
-
-
 
 
 class GiaXeHoiCrawler(Crawler):
     def __init__(self):
         super().__init__()
-        self.source = [f'https://giaxehoi.vn/api/car/'+ str(i) +'/variant' for i in range(1,252)]
+        self.source = [f'https://giaxehoi.vn/api/car/' + str(i) + '/variant' for i in range(1, 252)]
         self.cars = {}
 
     def _normalize_origin(self, origin_code):
@@ -106,7 +93,7 @@ class GiaXeHoiCrawler(Crawler):
             reference_url = 'https://giaxehoi.vn/js/selector.js?ver=1.8.9'
             metadata = res[i]
             name = res[i]['full_name']
-            self.log.info('Getting infomation from %s' %name)
+            self.log.info('Getting infomation from %s' % name)
             model = res[i]['car']
             brand = res[i]['car_brand']
             info = res[i]['info']
@@ -119,20 +106,19 @@ class GiaXeHoiCrawler(Crawler):
             wheel_drive = self.normalize_wheeldrive(info['specs_chassis']['drivetrain'])
             engine_capacity = self.normalize_engine_cap(info['specs_engine']['capacity'])
             self.cars[name] = {'name': name,
-                                 'origin': origin,
-                                 'type': type_,
-                                 'seats': seats,
-                                 'doors': doors,
-                                 'source': url,
-                                 'transmission': transmission,
-                                 'wheel_drive': wheel_drive,
-                                 'year': year,
-                                 'model': model,
-                                 'brand': brand,
-                                 'engine_capacity': engine_capacity,
-                                 'metadata_reference': reference_url,
-                                 'metadata': metadata}
-
+                               'origin': origin,
+                               'type': type_,
+                               'seats': seats,
+                               'doors': doors,
+                               'source': url,
+                               'transmission': transmission,
+                               'wheel_drive': wheel_drive,
+                               'year': year,
+                               'model': model,
+                               'brand': brand,
+                               'engine_capacity': engine_capacity,
+                               'metadata_reference': reference_url,
+                               'metadata': metadata}
 
     def crawl(self):
         path = 'cars_infomation/giaxehoi_com/car_data.json'
@@ -147,11 +133,12 @@ class GiaXeHoiCrawler(Crawler):
             self.cars = json.load(file)
             return self.cars
 
+
 def main():
     crwlr = GiaXeHoiCrawler()
     res = crwlr.crawl()
     print(len(res))
 
+
 if __name__ == '__main__':
     main()
-
