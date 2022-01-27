@@ -125,7 +125,7 @@ class GiaXeHoiCrawler(Crawler):
         if is_file_empty(path):
             with open(path, mode='w', encoding='utf-8') as file:
                 for link in self.source:
-                    res = self.extract(link)
+                    self.extract(link)
                 json.dump(self.cars, file, indent=4, ensure_ascii=False)
                 return self.cars
 
