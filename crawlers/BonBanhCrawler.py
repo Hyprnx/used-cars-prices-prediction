@@ -267,7 +267,6 @@ class BonBanhCrawler(Crawler):
                 # cars_links = cars_links[:10]    # test with first 10 cars
                 i = 0
                 for i in range(len(cars_links)):
-
                     if i % 100 == 0:
                         self.log.info(f'Crawled {i}')
                         successful_item_length = len(self.crawled_items)
@@ -291,7 +290,6 @@ class BonBanhCrawler(Crawler):
                         self.failed_item.append(car)
                         self.log.info(validate_result)
                     i += 1
-
 
                 json.dump(self.crawled_items, file, indent=4, ensure_ascii=False)
                 failed_item_path = 'data/bonbanh_failed_items.json'

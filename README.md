@@ -1,5 +1,31 @@
 # USED CARS PRICE PREDICTION
 This repo contains all the source code and obtained data for the used cars prices prediction model
+## Purpose of this projects
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">USED CARS PRICE PREDICTION</h3>
+
+  <p align="center">
+    Introduction!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+  </p>
+</div>
+Due to the increasing demand for used cars in Vietnam, we have built a prediction model to predict used car's price in 
+Vietnam.
+
 
 ## About crawlers
 ### About Selenium

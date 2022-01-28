@@ -101,22 +101,23 @@ class DanhGiaXeCrawler(Crawler):
             self.review_list = file.readlines()
             return self.review_list
 
-    def crawl(self):
-        links = self.get_review_links()
-        for link in links:
-            extractor = DanhGiaXeExtractor(link).extract()
-            for res in extractor:
-                self.cars[res[0]] = res[1]
-
-        print(self.cars)
+    # def crawl(self):
+    #     links = self.get_review_links()
+    #     for link in links:
+    #         extractor = DanhGiaXeExtractor(link).extract()
+    #         for res in extractor:
+    #             self.cars[res[0]] = res[1]
+    #
+    #     print(self.cars)
 
 
 def main():
-        crwl = DanhGiaXeCrawler()
-        print(crwl.crawl())
+    # crwl = DanhGiaXeCrawler()
+    # print(crwl.crawl())
     # extractor = DanhGiaXeExtractor(
     #     'https://www.danhgiaxe.com//danh-gia/danh-gia-xe-kia-morning-2022-kho-tim-lai-hao-quang-da-mat-30598')
     # extractor.extract()
+    pass
 
 
 if __name__ == '__main__':
