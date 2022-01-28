@@ -6,9 +6,6 @@ from common.normalize_price import replace_all
 import json
 import requests
 from common.check_file_empty import is_file_empty
-from pprint import pprint
-import selenium
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 from time import sleep
