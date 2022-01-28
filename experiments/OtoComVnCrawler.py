@@ -6,14 +6,15 @@ from base import BaseClass
 from crawlers.crawler import Crawler
 from common.normalize_price import replace_all
 from common.check_file_empty import is_file_empty
+import json
 
 
 class OtoComVnUsedCarCrawler(BaseClass):
-    def __int__(self, url):
+    def __init__(self, url):
         super().__init__()
         self.url = url
-        self.log.info('Crawling %s' % self.url)
-        req = requests.get(self.url).text
+        # self.log.info('Crawling %s' % self.url)
+        req = requests.get(self.url)
         content = req.content
         self.soup = BeautifulSoup(content.decode('utf-8', 'ignore'), 'html.parser')
 
@@ -97,7 +98,7 @@ class OtoComVnUsedCarCrawler(BaseClass):
             text = text.replace(i, '')
         return text
 
-    def extract(self, href):
+    def extract(self):
         car = {}
 
         box_detail = self.soup.find('div', class_='box-detail-listing', id='box-detail')
@@ -106,13 +107,13 @@ class OtoComVnUsedCarCrawler(BaseClass):
         seats = box_detail.find('input', id='numberOfSeat')['value']
 
         car['price'] = price
-        car['source_url'] = href
+        car['source_url'] = self.url
         car['seats'] = seats
 
         group_title_detail = self.soup.find('div', class_='group-title-detail')
         name = group_title_detail.find('h1').string
-        car['name'] = name.split()[0]
-        car['brand'] = name.split()[1]
+        car['brand'] = name.split()[0]
+        car['name'] = name.split()[1]
 
         box_info_detail = self.soup.find('div', class_='box-info-detail')
         li = box_info_detail.find_all('li')
@@ -122,16 +123,27 @@ class OtoComVnUsedCarCrawler(BaseClass):
             txt = self._remove_words(l.text.strip())
             info.append(txt)
 
-        keys = ['year', 'type', 'condition', 'origin', 'km_driven',
-                'city', 'transmission', 'fuels']
+        if len(txt) == 8:
+            keys = ['year', 'type', 'condition', 'origin', 'km_driven',
+                    'city', 'transmission', 'fuels']
 
-        for i in range(8):
-            car[keys[i]] = info[i]
+            for i in range(8):
+                car[keys[i]] = info[i]
+
+        else:
+            keys = ['year', 'type', 'condition', 'origin', 'km_driven',
+                    'city', 'transmission']
+
+            for i in range(7):
+                car[keys[i]] = info[i]
+
+            car['fuels'] = 'gasoline'
+
+        car = self._normalize_all(car)
 
         return car
 
     def _normalize_all(self, car):
-        # ls = ['price', 'name', 'origin', 'km_driven', 'transmission', 'fuels']
         car['price'] = int(car['price'])
         car['origin'] = self._extract_origin(car['origin'])
         car['transmission'] = self._extract_transmission(car['transmission'])
@@ -139,28 +151,11 @@ class OtoComVnUsedCarCrawler(BaseClass):
         car['km_driven'] = int(car['km_driven'].split()[0].replace('.', ''))
         car['seats'] = int(car['seats'])
         car['type'] = self._normalize_type(car['type'])
+        car['brand'] = self._get_brand(car['brand'])
         # car.pop('city')
         car.pop('condition')
 
         return car
-
-    def crawl_add_car(self):
-        with open('data/otocomvn/href.txt') as f:
-            urls = f.readlines()
-
-        output = []
-
-        for url in urls:
-            try:
-                self.log.info('Extracting data...')
-                car = self.extract(url)
-                self.log.info('Normalizing data')
-                car = self._normalize_all(car)
-                output.append(car)
-
-            except:
-                self.log.info('Url is invalid')
-
 
 
 class OtoComVnCrawler(Crawler):
@@ -214,12 +209,40 @@ class OtoComVnCrawler(Crawler):
             car_url_ls = self.crawl_href(brand_url)
             self.add_href_txt(car_url_ls)
 
+    def crawl_add_car(self):
+        with open('data/otocomvn/href.txt') as f:
+            urls = f.readlines()
+
+        output = []
+        failed_cars = []
+
+        for url in urls:
+            url = url.split('\n')[0]
+            try:
+                car = OtoComVnUsedCarCrawler(url).extract()
+                print(car)
+
+                output.append(car)
+
+            except:
+                # self.log.info('URL NOT OK')
+                print(url)
+                failed_cars.append(url)
+
+        self.log.info('Adding data into json file...')
+
+        with open('data/otocomvn/otocomvn_used_car.json', 'w', encoding='utf-8') as f:
+            json.dump(output, f, ensure_ascii=False, indent=4)
+
+        with open('data/otocomvn/otocomvn_failed_used_car.json', 'w', encoding='utf-8') as f:
+            json.dump(failed_cars, f, ensure_ascii=False, indent=4)
+
 
 def main():
 
-    # hrefCrawl = OtoComVnCrawler()
-    # hrefCrawl.crawl_add_href()
-
+    crawl = OtoComVnCrawler()
+    # crawl.crawl_add_href()
+    crawl.crawl_add_car()
 
 if __name__ == '__main__':
     main()
