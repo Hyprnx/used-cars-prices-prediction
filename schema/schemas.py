@@ -189,3 +189,4 @@ SCHEMA_USED_CARS_FINAL = {
     ],
     'additionalProperties': False
 }
+

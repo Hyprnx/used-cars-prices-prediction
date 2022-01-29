@@ -72,7 +72,10 @@ class OtoComVnUsedCarCrawler(BaseClass):
             'hatchback': 'hatchback',
             'van/minivan': 'van',
             'bán tải / pickup': 'pickup',
-            'wagon': 'wagon'
+            'pick-up truck': 'pickup',
+            'truck': 'pickup',
+            'city car': 'hatchback',
+            'wagon': 'wagon',
         }
         type = replace_all(replacer, type)
 
@@ -194,7 +197,7 @@ class OtoComVnCrawler(Crawler):
 
         if is_file_empty(file_path):
             self.log.info('Initializing and Adding href links into text file')
-            txt_file = open(file_path, 'w')
+            txt_file = open(file_path, 'w+')
             txt_file.write('\n'.join(car_url_ls))
             txt_file.close()
         else:
@@ -241,7 +244,7 @@ class OtoComVnCrawler(Crawler):
 def main():
 
     crawl = OtoComVnCrawler()
-    # crawl.crawl_add_href()
+    crawl.crawl_add_href()
     crawl.crawl_add_car()
 
 if __name__ == '__main__':
