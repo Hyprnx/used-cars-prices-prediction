@@ -4,27 +4,33 @@ This repo contains all the source code and obtained data for the used cars price
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Hyprnx/used-cars-prices-prediction">
+    <img src="README_resource/Vector.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">USED CARS PRICE PREDICTION</h3>
-
-  <p align="center">
-    Introduction!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
 </div>
-Due to the increasing demand for used cars in Vietnam, we have built a prediction model to predict used car's price in 
-Vietnam.
+
+The global used cars market was estimated at $828.24 billion in 2019 and is projected to reach $1,355.15 billion
+by 2027. In Vietnam, Used Car market in terms of sales volume increased at a double digit CAGR over the review period
+2013-2018. The market was observed to be at the early growth stage owing to the faster vehicle replacement rate,
+reduction in new car launch time, growing middle class population, increasing average ticket size and reduction in
+import duty on new cars. In Vietnam, people prefer to buy a used car as new ones are expensive and for middle or lower
+income group people, used cars have become more popular choices. Vietnamese government is expecting new policies that
+ban motorbikes in the urban area so that the demand for used cars is expected to rocket.
+
+Due to the increasing demand for used cars in Vietnam, we have built a prediction model to predict used cars' prices
+to make it easier for Vietnamese to purchase cars.
+
+
+## Authors
+- [@Nguyen Thanh Tuan](https://github.com/nttuan8) - Director of DSLab
+- [@To Duc Anh](https://github.com/hyprnx) - DSLab member
+- [@Tran Minh Khoa](https://github.com/khoa2181)
+- [@Duong Thu Phuong](https://github.com/dtphuong2612)
+- [@Nguyen Anh Tu](https://github.com/tunachiu)- DSLab member
+- [@Kieu Son Tung](https://github.com/nttuan8)
+- [@Nguyen Son Tung](https://github.com/hyprnx)- DSLab member
 
 
 ## About crawlers
