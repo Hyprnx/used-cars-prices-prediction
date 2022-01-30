@@ -5,7 +5,7 @@ This repo contains all the source code and obtained data for the used cars price
 <br />
 <div align="center">
   <a href="https://github.com/Hyprnx/used-cars-prices-prediction">
-    <img src="README_resource/Vector.png" alt="Logo" width="180" height="80">
+    <img src="README_resource/Vector.png" alt="Logo" width="900" height="400">
   </a>
 
   <h3 align="center">USED CARS PRICE PREDICTION</h3>
