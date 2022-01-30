@@ -1,3 +1,18 @@
+#  Copyright 2022. Nguyen Thanh Tuan, To Duc Anh, Tran Minh Khoa, Duong Thu Phuong, Nguyen Anh Tu, Kieu Son Tung, Nguyen Son Tung
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 from crawlers.crawler import Crawler
 from bs4 import BeautifulSoup
 from base import BaseClass
@@ -101,22 +116,23 @@ class DanhGiaXeCrawler(Crawler):
             self.review_list = file.readlines()
             return self.review_list
 
-    def crawl(self):
-        links = self.get_review_links()
-        for link in links:
-            extractor = DanhGiaXeExtractor(link).extract()
-            for res in extractor:
-                self.cars[res[0]] = res[1]
-
-        print(self.cars)
+    # def crawl(self):
+    #     links = self.get_review_links()
+    #     for link in links:
+    #         extractor = DanhGiaXeExtractor(link).extract()
+    #         for res in extractor:
+    #             self.cars[res[0]] = res[1]
+    #
+    #     print(self.cars)
 
 
 def main():
-        crwl = DanhGiaXeCrawler()
-        print(crwl.crawl())
+    # crwl = DanhGiaXeCrawler()
+    # print(crwl.crawl())
     # extractor = DanhGiaXeExtractor(
     #     'https://www.danhgiaxe.com//danh-gia/danh-gia-xe-kia-morning-2022-kho-tim-lai-hao-quang-da-mat-30598')
     # extractor.extract()
+    pass
 
 
 if __name__ == '__main__':

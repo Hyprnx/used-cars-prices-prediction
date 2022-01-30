@@ -1,3 +1,18 @@
+#  Copyright 2022. Nguyen Thanh Tuan, To Duc Anh, Tran Minh Khoa, Duong Thu Phuong, Nguyen Anh Tu, Kieu Son Tung, Nguyen Son Tung
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 from crawlers.crawler import Crawler
 from bs4 import BeautifulSoup
 from base import BaseClass
@@ -267,7 +282,6 @@ class BonBanhCrawler(Crawler):
                 # cars_links = cars_links[:10]    # test with first 10 cars
                 i = 0
                 for i in range(len(cars_links)):
-
                     if i % 100 == 0:
                         self.log.info(f'Crawled {i}')
                         successful_item_length = len(self.crawled_items)
@@ -291,7 +305,6 @@ class BonBanhCrawler(Crawler):
                         self.failed_item.append(car)
                         self.log.info(validate_result)
                     i += 1
-
 
                 json.dump(self.crawled_items, file, indent=4, ensure_ascii=False)
                 failed_item_path = 'data/bonbanh_failed_items.json'
