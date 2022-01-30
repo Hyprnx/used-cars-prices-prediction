@@ -1,6 +1,7 @@
 # USED CARS PRICE PREDICTION
 <div id="top"></div>
 This repo contains all the source code and obtained data for the used cars prices prediction model
+
 ## Purpose of this projects
 <!-- PROJECT LOGO -->
 <br />
@@ -8,7 +9,6 @@ This repo contains all the source code and obtained data for the used cars price
   <a href="https://github.com/Hyprnx/used-cars-prices-prediction">
     <img src="README_resource/Vector.png" alt="Logo" width="775" height="300">
   </a>
-
   <h3 align="center">USED CARS PRICE PREDICTION</h3>
 </div>
 
@@ -94,7 +94,6 @@ Open Terminal / cmd and do the following:
   ```
 
 ### Install requirements.txt
-This is an example of how to list things you need to use the software and how to install them.
   ```sh
   pip install -r requirement.txt
   ```
@@ -102,6 +101,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Start using the model
 We included our crawled data, but if you want to crawl the newest data, do the following
+
 #### Re-crawl the data
 Head to [crawl.py](crawlers/crawl.py) and run it
 
@@ -112,20 +112,20 @@ If you want to re train the model, you can head to the notebook and choose run a
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 ## License
-
 Distributed under the GNU General Public License v3.0 License. See `LICENSE.txt` for more information.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-## Contact
-
+## Contact us
 [To Duc Anh](mailto:toducanh2001@gmail.com)
 
-Project Link: [https://github.com/Hyprnx/used-cars-prices-prediction]
-(https://github.com/Hyprnx/used-cars-prices-prediction)
+[Tran Minh Khoa](mailto:khoatran2181@gmail.com)
+
+[Duong Thi Thu Phuong](mailto:duongthithuphuong26122001@gmail.com)
+
+[Kieu Son Tung](mailto:sontungkieu412@gmail.com)
+
+Project Link: [Used cars prediction](https://github.com/Hyprnx/used-cars-prices-prediction)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
