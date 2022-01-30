@@ -24,6 +24,7 @@ Due to the increasing demand for used cars in Vietnam, we have built a predictio
 to make it easier for Vietnamese to purchase cars.
 
 <br/>
+
 ## Authors
 - [@Nguyen Thanh Tuan](https://github.com/nttuan8) - Director of DSLab
 - [@To Duc Anh](https://github.com/hyprnx) - DSLab member
@@ -38,13 +39,9 @@ to make it easier for Vietnamese to purchase cars.
 
 ## The process
 
-<br/>
-
 ### The Data making
 To make the model best fit with Vietnamese market, we have search for top e-commerce websites that sell used cars to
 crawl selling post of that sites.
-
-<br/>
 
 ### Getting the required fields
 Since data have a lot of missing fields because each e-commerce site has different data field information, we have also
@@ -59,14 +56,10 @@ in the missing fields with precision of 99.2%.
 
 ## About crawlers
 
-<br/>
-
 ### The process
 We mainly use requests and beautifulsoup package in Python to send requests and extract information. Sometimes,
 the protection to prevent DoS attack stop us from scraping the website, therefore, we have to simulate user activities 
 using Selenium
-
-<br/>
 
 ### About Selenium
 Selenium requires a driver to interface with the chosen browser. Firefox, for example, requires geckodriver, which
@@ -83,7 +76,6 @@ The crawling mechanism requires selenium, which mean you need specific version o
 
 We included a webdriver in the repo itself, but if you want you can change to use the webdriver of your choice:
 
-<br/>
 
 #### Changing webdriver path:
 If you want to change the webdriver path, go to common/check_os, there is a function called: 
@@ -102,8 +94,6 @@ Open Terminal / cmd and do the following:
   python -m venv <envname>
   ```
 
-<br/>
-
 #### Activate
 
 - On Mac:
@@ -115,15 +105,12 @@ Open Terminal / cmd and do the following:
   <envname>\Scripts\activate
   ```
 
-<br/>
-
 ### Install requirements.txt
   ```sh
   pip install -r requirement.txt
   ```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<br/>
 
 ### Start using the model
 We included our crawled data, but if you want to crawl the newest data, do the following
@@ -132,8 +119,6 @@ We included our crawled data, but if you want to crawl the newest data, do the f
 Head to [crawl.py](crawlers/crawl.py) and run it
 
 <u><b>Disclaimer</b></u>: Due to the update of the website or changing website structure, some crawlers might not work
-
-<br/>
 
 #### Using the model:
 If you want to re train the model, you can head to the notebook and choose run all to get the model results.
