@@ -26,13 +26,13 @@ to make it easier for Vietnamese to purchase cars.
 <br/>
 
 ## Authors
-- [@Nguyen Thanh Tuan](https://github.com/nttuan8) - Director of DSLab
-- [@To Duc Anh](https://github.com/hyprnx) - DSLab member
-- [@Tran Minh Khoa](https://github.com/khoa2181) - DSEB member
-- [@Duong Thu Phuong](https://github.com/dtphuong2612) - DSEB member
-- [@Nguyen Anh Tu](https://github.com/tunachiu) - DSLab member
-- [@Kieu Son Tung](https://github.com/nttuan8) - DSEB member
-- [@Nguyen Son Tung](https://github.com/209sontung) - DSLab member
+- [Nguyen Thanh Tuan](https://github.com/nttuan8) - Director of DSLab
+- [To Duc Anh](https://github.com/hyprnx) - DSLab member
+- [Tran Minh Khoa](https://github.com/khoa2181) - DSEB member
+- [Duong Thu Phuong](https://github.com/dtphuong2612) - DSEB member
+- [Nguyen Anh Tu](https://github.com/tunachiu) - DSLab member
+- [Kieu Son Tung](https://github.com/nttuan8) - DSEB member
+- [Nguyen Son Tung](https://github.com/209sontung) - DSLab member
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <br/>
