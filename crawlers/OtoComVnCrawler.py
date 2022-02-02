@@ -115,8 +115,8 @@ class OtoComVnUsedCarCrawler(BaseClass):
 
         group_title_detail = self.soup.find('div', class_='group-title-detail')
         name = group_title_detail.find('h1').string
-        car['brand'] = name.split()[0]
-        car['name'] = name.split()[1]
+        car['brand'] = name.split()[0].lower()
+        car['name'] = name.split()[1].lower()
 
         box_info_detail = self.soup.find('div', class_='box-info-detail')
         li = box_info_detail.find_all('li')
@@ -148,13 +148,14 @@ class OtoComVnUsedCarCrawler(BaseClass):
 
     def _normalize_all(self, car):
         car['price'] = int(car['price'])
-        car['origin'] = self._extract_origin(car['origin'])
-        car['transmission'] = self._extract_transmission(car['transmission'])
-        car['fuels'] = self._extract_fuels(car['fuels'])
+        car['year'] = int(car['year'])
+        car['origin'] = self._extract_origin(car['origin'].lstrip(' '))
+        car['transmission'] = self._extract_transmission(car['transmission'].lstrip(' '))
+        car['fuels'] = self._extract_fuels(car['fuels'].lstrip(' '))
         car['km_driven'] = int(car['km_driven'].split()[0].replace('.', ''))
         car['seats'] = int(car['seats'])
-        car['type'] = self._normalize_type(car['type'])
-        car['brand'] = self._get_brand(car['brand'])
+        car['type'] = self._normalize_type(car['type'].lstrip(' '))
+        car['brand'] = self._get_brand(car['brand'].lstrip(' '))
         car.pop('condition')
 
         return car
