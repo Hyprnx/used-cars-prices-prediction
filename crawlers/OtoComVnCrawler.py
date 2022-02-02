@@ -13,7 +13,7 @@ class OtoComVnUsedCarCrawler(BaseClass):
     def __init__(self, url):
         super().__init__()
         self.url = url
-        # self.log.info('Crawling %s' % self.url)
+        self.log.info('Crawling %s' % self.url)
         req = requests.get(self.url)
         content = req.content
         self.soup = BeautifulSoup(content.decode('utf-8', 'ignore'), 'html.parser')
@@ -155,7 +155,6 @@ class OtoComVnUsedCarCrawler(BaseClass):
         car['seats'] = int(car['seats'])
         car['type'] = self._normalize_type(car['type'])
         car['brand'] = self._get_brand(car['brand'])
-        # car.pop('city')
         car.pop('condition')
 
         return car
@@ -187,7 +186,6 @@ class OtoComVnCrawler(Crawler):
             for item in item_cars:
                 href = item.find('a')['href']
                 link = '{}{}'.format(self.base_url, href)
-                # print(link)
                 car_url_ls.append(link)
 
         return car_url_ls
@@ -223,7 +221,6 @@ class OtoComVnCrawler(Crawler):
             url = url.split('\n')[0]
             try:
                 car = OtoComVnUsedCarCrawler(url).extract()
-                print(car)
 
                 output.append(car)
 
