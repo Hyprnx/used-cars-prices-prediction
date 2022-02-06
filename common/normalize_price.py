@@ -31,7 +31,6 @@ def normalize_price(price):
     price = replace_all(million, price)
     price = price.split(' ')
     price = [i for i in price if i]
-    print(price)
     price = [(float(i)) for i in price]
     try:
         price = price[0] * price[1] + price[2] * price[3]
