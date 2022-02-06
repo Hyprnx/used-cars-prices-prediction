@@ -11,7 +11,7 @@ from schema.validate import ValidateUsedCars
 from common.normalize_price import normalize_price
 from common.headers import HEADERS
 
-path = '/Users/minhkhoa/Documents/used-cars-prices-prediction/data/sanxehot'
+path = 'data/sanxehot'
 
 
 class SanXeHotCrawler(BaseClass):
@@ -65,5 +65,10 @@ class SanXeHotCrawler(BaseClass):
         return self.car_df
 
 
-cars = SanXeHotCrawler().crawl()
-# cars.to_csv(path + '/sanxehot_detail.csv')
+def main():
+    cars = SanXeHotCrawler().crawl()
+    cars.to_csv(path + '/sanxehot_detail.csv')
+
+
+if __name__ == '__main__':
+    main()
