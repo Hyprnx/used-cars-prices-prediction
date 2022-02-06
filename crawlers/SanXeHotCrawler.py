@@ -27,12 +27,10 @@ class SanXeHotCrawler:
         self.df = pd.read_json(path + 'sanxehot_links.json').T
 
     def crawl(self):
-        car_df = pd.DataFrame(columns=['name', 'brand', 'source_url', 'type', 'origin', 'km_driven',
-                                       'external_color', 'seats', 'engine_capacity', 'fuels',
-                                       'transmission', 'wheel_drive', 'price', 'year'])
+        car_list = {}
 
         num = 0
-        for i in range(0, len(self.df)):
+        for i in range(401, 801):
             url = df.iloc[i]['url']
             type = df.iloc[i]['type']
             req = requests.get(url, headers=HEADERS).text
@@ -49,10 +47,6 @@ class SanXeHotCrawler:
 
             name = car_feature[2].text
             year = car_feature[4].text
-            # if len(nam) > 1:
-            #     year = nam[-1]
-            # else:
-            #     year = nam[0]
 
             km_driven = car_feature[6].text.split()[0]
             km_driven = km_driven.replace('.', '')
@@ -69,17 +63,18 @@ class SanXeHotCrawler:
             origin = car_feature[12].text
             external_color = car_feature[14].text
 
-            car_df = car_df.append(pd.Series({'name': name, 'brand': None, 'source_url': url, 'type': type,
-                                              'origin': origin, 'km_driven': km_driven,
-                                              'external_color': external_color,
-                                              'seats': None, 'engine_capacity': engine_capacity, 'fuels': fuels,
-                                              'transmission': transmission, 'wheel_drive': None,
-                                              'price': price, 'year': year}), ignore_index=True)
+            car_list[num] = {'name': name, 'brand': None, 'source_url': url, 'type': type,
+                             'origin': origin, 'km_driven': km_driven,
+                             'external_color': external_color,
+                             'seats': None, 'engine_capacity': engine_capacity, 'fuels': fuels,
+                             'transmission': transmission, 'wheel_drive': None,
+                             'price': price, 'year': year}
             num += 1
             print(num)
 
-        return car_df
+        return car_list
 
 
 cars = SanXeHotCrawler().crawl()
-cars.to_csv(path + 'sanxehot_detail.csv')
+with open(path + "cars_detail800.json", "w+") as f:
+    f.write(json.dumps(cars, indent=4))
