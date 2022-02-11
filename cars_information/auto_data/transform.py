@@ -10,4 +10,9 @@ for i in cars:
     for key in i.keys():
         ensure_keys.append(key)
 
-print(set(ensure_keys))
+keys = set(ensure_keys)
+
+for i in keys:
+    print(i)
+
+print(len(keys))
