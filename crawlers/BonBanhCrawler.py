@@ -26,6 +26,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 from schema.validate import ValidateUsedCars
 from common.headers import HEADERS
+import warnings
 
 class BonBanhUsedCarCrawler(BaseClass):
     def __init__(self, url):
@@ -191,8 +192,8 @@ class BonBanhCrawler(Crawler):
                 self.log.info('File is empty, crawling brands...')
                 selector = '#primary-nav'
                 brands = []
-                transparent_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class':"menuparent", 'style':"z-index:999;"})
-                hidden_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class':"menuparent add_menu"})
+                transparent_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class': "menuparent", 'style': "z-index:999;"})
+                hidden_brands_container = self.soup.select(selector)[0].find_all('li', attrs={'class': "menuparent add_menu"})
                 for brand_container in transparent_brands_container:
                     brand = brand_container.find('a')['href']
                     brands.append(self.source + brand)
@@ -271,6 +272,7 @@ class BonBanhCrawler(Crawler):
 
 
     def crawl(self):
+        # warnings.warn('This method is no longer supported, if you want to use it, use scrapy folder', DeprecationWarning)
         validator = ValidateUsedCars()
         self.log.info('Successfully initiate validator')
         cars_links = self._get_cars_link()
