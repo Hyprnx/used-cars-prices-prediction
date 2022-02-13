@@ -102,7 +102,7 @@ SCHEMA_USED_CARS = {
     },
     "required": [
         "name",
-        "brand"
+        "brand",
         "source_url",
         "type",
         "origin",
