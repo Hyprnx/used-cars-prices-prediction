@@ -69,7 +69,29 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "daewoo labo 0 8 mt 2008",
+        "model": "Labo",
         "source_url": "https://bonbanh.com/xe-daewoo-labo-0.8-mt-2008-4119319",
         "origin": "imported",
         "km_driven": 0,
@@ -87,6 +109,7 @@
     },
     {
         "name": "daewoo labo 0 8 mt 2006",
+        "model": "Labo",
         "source_url": "https://bonbanh.com/xe-daewoo-labo-0.8-mt-2006-4086113",
         "origin": "imported",
         "km_driven": 0,
@@ -110,6 +133,7 @@
     },
     {
         "name": "daewoo labo 0 8 mt 1998",
+        "model": "Labo",
         "source_url": "https://bonbanh.com/xe-daewoo-labo-0.8-mt-1998-4045242",
         "origin": "imported",
         "km_driven": 0,
@@ -127,6 +151,7 @@
     },
     {
         "name": "daewoo labo 0 8 mt 2006",
+        "model": "Labo",
         "source_url": "https://bonbanh.com/xe-daewoo-labo-0.8-mt-2006-4027659",
         "origin": "imported",
         "km_driven": 0,
@@ -144,6 +169,7 @@
     },
     {
         "name": "daewoo labo 0 8 mt 1998",
+        "model": "Labo",
         "source_url": "https://bonbanh.com/xe-daewoo-labo-0.8-mt-1998-4008043",
         "origin": "imported",
         "km_driven": 0,
@@ -260,6 +286,7 @@
     },
     {
         "name": "hyundai mighty 110sp 2021",
+        "model": "Mighty",
         "source_url": "https://bonbanh.com/xe-hyundai-mighty-110sp-2021-3028576",
         "origin": "imported",
         "km_driven": 0,
@@ -303,7 +330,23 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "hyundai hd 72 2014",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-72-2014-4165581",
         "origin": "domestic",
         "km_driven": 190000,
@@ -323,7 +366,11 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
         "name": "hyundai porter h150 2021",
+        "model": "Porter",
         "source_url": "https://bonbanh.com/xe-hyundai-porter-h150-2021-1578213",
         "origin": "imported",
         "km_driven": 0,
@@ -445,7 +492,44 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "hyundai hd 320 2017",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-320-2017-515018",
         "origin": "imported",
         "km_driven": 0,
@@ -513,7 +597,32 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "hyundai hd 320 2021",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-320-2021-508696",
         "origin": "imported",
         "km_driven": 0,
@@ -554,7 +663,20 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "hyundai mighty 75s 3t5 2021",
+        "model": "Mighty",
         "source_url": "https://bonbanh.com/xe-hyundai-mighty-75s-3t5-2021-2663663",
         "origin": "imported",
         "km_driven": 0,
@@ -614,6 +736,7 @@
     },
     {
         "name": "hyundai libero 2 5 2001",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2001-4165082",
         "origin": "imported",
         "km_driven": 0,
@@ -667,6 +790,7 @@
     },
     {
         "name": "hyundai libero 2 5 2006",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2006-4155806",
         "origin": "imported",
         "km_driven": 186000,
@@ -684,6 +808,7 @@
     },
     {
         "name": "hyundai hd 72 2009",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-72-2009-4154626",
         "origin": "imported",
         "km_driven": 0,
@@ -722,6 +847,7 @@
     },
     {
         "name": "hyundai hd 99 2017",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-99-2017-4148330",
         "origin": "domestic",
         "km_driven": 0,
@@ -829,6 +955,7 @@
     },
     {
         "name": "hyundai libero 2 5 2003",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2003-4127361",
         "origin": "imported",
         "km_driven": 0,
@@ -858,6 +985,7 @@
     },
     {
         "name": "hyundai libero 2 5 2006",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2006-4121998",
         "origin": "imported",
         "km_driven": 0,
@@ -875,6 +1003,7 @@
     },
     {
         "name": "hyundai hd 72 2011",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-72-2011-4119597",
         "origin": "domestic",
         "km_driven": 0,
@@ -907,6 +1036,7 @@
     },
     {
         "name": "hyundai libero 2 5 2003",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2003-4114202",
         "origin": "imported",
         "km_driven": 0,
@@ -960,6 +1090,7 @@
     },
     {
         "name": "hyundai porter 2000",
+        "model": "Porter",
         "source_url": "https://bonbanh.com/xe-hyundai-porter--2000-4099515",
         "origin": "imported",
         "km_driven": 0,
@@ -1040,6 +1171,7 @@
     },
     {
         "name": "hyundai hd 270 2014",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-270-2014-4088077",
         "origin": "imported",
         "km_driven": 0,
@@ -1150,6 +1282,7 @@
     },
     {
         "name": "hyundai libero 2 5 2005",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2005-4073156",
         "origin": "imported",
         "km_driven": 0,
@@ -1191,6 +1324,7 @@
     },
     {
         "name": "hyundai libero 2 5 2004",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2004-4068541",
         "origin": "imported",
         "km_driven": 320000,
@@ -1220,6 +1354,7 @@
     },
     {
         "name": "hyundai hd 72 2011",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-72-2011-4066819",
         "origin": "domestic",
         "km_driven": 0,
@@ -1276,6 +1411,7 @@
     },
     {
         "name": "hyundai libero 2 5 2003",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2003-4062126",
         "origin": "imported",
         "km_driven": 0,
@@ -1323,6 +1459,7 @@
     },
     {
         "name": "hyundai hd 65 2016",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-65-2016-4055754",
         "origin": "domestic",
         "km_driven": 0,
@@ -1340,6 +1477,7 @@
     },
     {
         "name": "hyundai libero 2 5 2004",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2004-4055137",
         "origin": "imported",
         "km_driven": 0,
@@ -1441,6 +1579,7 @@
     },
     {
         "name": "hyundai hd 72 2015",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-72-2015-4031347",
         "origin": "domestic",
         "km_driven": 0,
@@ -1479,6 +1618,7 @@
     },
     {
         "name": "hyundai hd 700 2017",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-700-2017-4024385",
         "origin": "domestic",
         "km_driven": 0,
@@ -1514,6 +1654,7 @@
     },
     {
         "name": "hyundai hd 72 2009",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-72-2009-4016822",
         "origin": "imported",
         "km_driven": 0,
@@ -1531,6 +1672,7 @@
     },
     {
         "name": "hyundai hd 72 2015",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-72-2015-4016814",
         "origin": "domestic",
         "km_driven": 0,
@@ -1548,6 +1690,7 @@
     },
     {
         "name": "hyundai libero 2 5 2001",
+        "model": "Libero",
         "source_url": "https://bonbanh.com/xe-hyundai-libero-2.5-2001-4012983",
         "origin": "imported",
         "km_driven": 0,
@@ -1661,6 +1804,7 @@
     },
     {
         "name": "hyundai hd 800 2017",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-800-2017-3991277",
         "origin": "domestic",
         "km_driven": 0,
@@ -1750,6 +1894,7 @@
     },
     {
         "name": "hyundai porter h150 mpb 2019",
+        "model": "Porter",
         "source_url": "https://bonbanh.com/xe-hyundai-porter-h150-mpb-2019-3475029",
         "origin": "domestic",
         "km_driven": 0,
@@ -1767,6 +1912,7 @@
     },
     {
         "name": "hyundai hd 98 6 5t",
+        "model": "HD",
         "source_url": "https://bonbanh.com/xe-hyundai-hd-98-6_5t---ga-co-2016-516626",
         "origin": "imported",
         "km_driven": 0,
@@ -1826,6 +1972,7 @@
     },
     {
         "name": "isuzu ben 6 tấn 2020",
+        "model": "Khác",
         "source_url": "https://bonbanh.com/xe-isuzu-khac-ben-6-tan-2020-1802358",
         "origin": "domestic",
         "km_driven": 0,
@@ -1867,6 +2014,7 @@
     },
     {
         "name": "isuzu qkr qkr77fe4 thùng 3 6m 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-qkr77fe4-thung-3.6m-2021-2893755",
         "origin": "domestic",
         "km_driven": 0,
@@ -1914,6 +2062,7 @@
     },
     {
         "name": "isuzu nqr 2021",
+        "model": "NQR",
         "source_url": "https://bonbanh.com/xe-isuzu-nqr--2021-3967922",
         "origin": "imported",
         "km_driven": 0,
@@ -1924,13 +2073,14 @@
         "engine_capacity": 5.2,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 840000000,
+        "price": 820000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
     },
     {
         "name": "isuzu 15 tấn 3 chân 9m3 2021",
+        "model": "Khác",
         "source_url": "https://bonbanh.com/xe-isuzu-khac-15-tan_-3-chan_-9m3-2021-3644713",
         "origin": "imported",
         "km_driven": 0,
@@ -1941,7 +2091,7 @@
         "engine_capacity": 7.8,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 1720000000,
+        "price": 1707000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
@@ -1954,6 +2104,7 @@
     },
     {
         "name": "isuzu nmr nmr 310 nmr85he4 2021",
+        "model": "NMR",
         "source_url": "https://bonbanh.com/xe-isuzu-nmr-nmr-310(nmr85he4)-2021-3208295",
         "origin": "domestic",
         "km_driven": 0,
@@ -1971,6 +2122,7 @@
     },
     {
         "name": "isuzu qkr 1t5 thùng kín 3m6 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-1t5-thung-kin-3m6-2021-3843061",
         "origin": "domestic",
         "km_driven": 0,
@@ -1981,7 +2133,7 @@
         "engine_capacity": 3.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 499000000,
+        "price": 490000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
@@ -2009,6 +2161,7 @@
     },
     {
         "name": "isuzu dmax spark 1 9l 4x2 mt 2021",
+        "model": "Dmax",
         "source_url": "https://bonbanh.com/xe-isuzu-dmax-spark-1.9l-4x2-mt-2021-3861022",
         "origin": "imported",
         "km_driven": 0,
@@ -2029,6 +2182,7 @@
     },
     {
         "name": "isuzu qkr 270 1 95t 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-270-1.95t-2021-3728713",
         "origin": "domestic",
         "km_driven": 0,
@@ -2039,13 +2193,14 @@
         "engine_capacity": 3.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 735000000,
+        "price": 720000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
     },
     {
         "name": "isuzu nmr 1t9 thùng bạt 4m4 2021",
+        "model": "NMR",
         "source_url": "https://bonbanh.com/xe-isuzu-nmr-1t9-thung-bat-4m4-2021-3651744",
         "origin": "imported",
         "km_driven": 0,
@@ -2063,6 +2218,7 @@
     },
     {
         "name": "isuzu qkr 1t9 thùng kín 4m4 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-1t9-thung-kin-4m4-2021-3653527",
         "origin": "domestic",
         "km_driven": 0,
@@ -2073,13 +2229,14 @@
         "engine_capacity": 3.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 545000000,
+        "price": 540000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
     },
     {
         "name": "isuzu npr 3 5 tấn thùng 5m2 2021",
+        "model": "NPR",
         "source_url": "https://bonbanh.com/xe-isuzu-npr-3.5-tan_-thung-5m2-2021-3876685",
         "origin": "imported",
         "km_driven": 0,
@@ -2090,7 +2247,7 @@
         "engine_capacity": 3.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 709000000,
+        "price": 715000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
@@ -2100,6 +2257,7 @@
     },
     {
         "name": "isuzu qkr ben tự đổ 2t 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-ben-tu-do-2t-2021-2671491",
         "origin": "imported",
         "km_driven": 0,
@@ -2126,6 +2284,7 @@
     },
     {
         "name": "isuzu 6t5 thùng bạt 6m7 2021",
+        "model": "Khác",
         "source_url": "https://bonbanh.com/xe-isuzu-khac-6t5-thung-bat-6m7-2021-3571877",
         "origin": "imported",
         "km_driven": 0,
@@ -2143,6 +2302,7 @@
     },
     {
         "name": "isuzu nqr 4t9 thùng bạt 6m2 2021",
+        "model": "NQR",
         "source_url": "https://bonbanh.com/xe-isuzu-nqr-4t9-thung-bat-6m2-2021-3811086",
         "origin": "imported",
         "km_driven": 0,
@@ -2153,13 +2313,14 @@
         "engine_capacity": 5.2,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 810000000,
+        "price": 820000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
     },
     {
         "name": "isuzu fvr 7t4 thùng kín 9 5m 2021",
+        "model": "FVR",
         "source_url": "https://bonbanh.com/xe-isuzu-fvr-7t4-thung-kin-9.5m-2021-3647841",
         "origin": "imported",
         "km_driven": 0,
@@ -2170,13 +2331,14 @@
         "engine_capacity": 7.8,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 1430000000,
+        "price": 1400000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
     },
     {
         "name": "isuzu qkr 2t9 2020",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-2t9-2020-3399133",
         "origin": "domestic",
         "km_driven": 0,
@@ -2187,13 +2349,14 @@
         "engine_capacity": 3.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 527000000,
+        "price": 540000000,
         "year": 2020,
         "type": "truck",
         "brand": "isuzu"
     },
     {
         "name": "isuzu fvr 900 2019",
+        "model": "FVR",
         "source_url": "https://bonbanh.com/xe-isuzu-fvr-900-2019-3208792",
         "origin": "domestic",
         "km_driven": 0,
@@ -2229,6 +2392,7 @@
     },
     {
         "name": "isuzu qkr 1t99 bửng nâng 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-1t99--bung-nang-2021-3887725",
         "origin": "domestic",
         "km_driven": 0,
@@ -2252,6 +2416,7 @@
     },
     {
         "name": "isuzu 6 5 tấn 2021",
+        "model": "Khác",
         "source_url": "https://bonbanh.com/xe-isuzu-khac-6.5-tan-2021-1802290",
         "origin": "domestic",
         "km_driven": 0,
@@ -2269,6 +2434,7 @@
     },
     {
         "name": "isuzu nmr 3 tấn thùng bạt 4 4m 2021",
+        "model": "NMR",
         "source_url": "https://bonbanh.com/xe-isuzu-nmr-3-tan-thung-bat-4.4m-2021-3877035",
         "origin": "imported",
         "km_driven": 0,
@@ -2289,6 +2455,7 @@
     },
     {
         "name": "isuzu qkr 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr--2021-3958664",
         "origin": "domestic",
         "km_driven": 0,
@@ -2306,6 +2473,7 @@
     },
     {
         "name": "isuzu nqr chuyên chở gia cầm 2021",
+        "model": "NQR",
         "source_url": "https://bonbanh.com/xe-isuzu-nqr-chuyen-cho-gia-cam-2021-3964307",
         "origin": "imported",
         "km_driven": 0,
@@ -2323,6 +2491,7 @@
     },
     {
         "name": "isuzu qkr 2 5m3 2021",
+        "model": "QKR",
         "source_url": "https://bonbanh.com/xe-isuzu-qkr-2.5m3-2021-3570228",
         "origin": "domestic",
         "km_driven": 0,
@@ -2333,7 +2502,7 @@
         "engine_capacity": 3.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 540000000,
+        "price": 555000000,
         "year": 2021,
         "type": "truck",
         "brand": "isuzu"
@@ -2412,6 +2581,7 @@
     },
     {
         "name": "isuzu npr 2007",
+        "model": "NPR",
         "source_url": "https://bonbanh.com/xe-isuzu-npr--2007-4069833",
         "origin": "domestic",
         "km_driven": 22000,
@@ -2507,6 +2677,7 @@
     },
     {
         "name": "kia frontier k200 2021",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-kia-frontier-k200-2021-4127893",
         "origin": "domestic",
         "km_driven": 0,
@@ -3105,7 +3276,11 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
         "name": "kia frontier k200 2020",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-kia-frontier-k200-2020-2909222",
         "origin": "domestic",
         "km_driven": 0,
@@ -3126,6 +3301,7 @@
     },
     {
         "name": "kia frontier k250 2020",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-kia-frontier-k250-2020-2866247",
         "origin": "domestic",
         "km_driven": 0,
@@ -3337,7 +3513,71 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "mitsubishi canter 2021",
+        "model": "Canter",
         "source_url": "https://bonbanh.com/xe-mitsubishi-canter--2021-4097871",
         "origin": "domestic",
         "km_driven": 0,
@@ -3394,6 +3634,7 @@
     },
     {
         "name": "mitsubishi canter fuso 10 4",
+        "model": "Canter",
         "source_url": "https://bonbanh.com/xe-mitsubishi-canter-fuso-10.4-re4-2020-2848144",
         "origin": "domestic",
         "km_driven": 0,
@@ -3411,6 +3652,7 @@
     },
     {
         "name": "mitsubishi canter 10 4",
+        "model": "Canter",
         "source_url": "https://bonbanh.com/xe-mitsubishi-canter-10.4-re4-2020-2870118",
         "origin": "domestic",
         "km_driven": 0,
@@ -3458,6 +3700,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-4009599",
         "origin": "imported",
         "km_driven": 0,
@@ -3475,6 +3718,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-17042",
         "origin": "domestic",
         "km_driven": 0,
@@ -3492,6 +3736,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3855845",
         "origin": "domestic",
         "km_driven": 0,
@@ -3509,6 +3754,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-17563",
         "origin": "domestic",
         "km_driven": 0,
@@ -3526,6 +3772,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3766140",
         "origin": "imported",
         "km_driven": 0,
@@ -3543,6 +3790,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3080532",
         "origin": "imported",
         "km_driven": 0,
@@ -3560,6 +3808,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-1508125",
         "origin": "domestic",
         "km_driven": 0,
@@ -3577,6 +3826,7 @@
     },
     {
         "name": "suzuki carry pro thùng kín 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-thung-kin-2021-1799555",
         "origin": "imported",
         "km_driven": 0,
@@ -3594,6 +3844,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3424044",
         "origin": "domestic",
         "km_driven": 0,
@@ -3611,6 +3862,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3298639",
         "origin": "domestic",
         "km_driven": 0,
@@ -3631,6 +3883,7 @@
     },
     {
         "name": "suzuki carry pro mui bạt 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-mui-bat-2021-3424185",
         "origin": "imported",
         "km_driven": 0,
@@ -3648,6 +3901,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3448880",
         "origin": "domestic",
         "km_driven": 0,
@@ -3665,6 +3919,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-840821",
         "origin": "domestic",
         "km_driven": 0,
@@ -3682,6 +3937,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3298640",
         "origin": "domestic",
         "km_driven": 0,
@@ -3699,6 +3955,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3391405",
         "origin": "domestic",
         "km_driven": 0,
@@ -3716,6 +3973,7 @@
     },
     {
         "name": "suzuki carry pro 2019",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2019-4118882",
         "origin": "imported",
         "km_driven": 30000,
@@ -3733,6 +3991,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3461194",
         "origin": "imported",
         "km_driven": 0,
@@ -3750,6 +4009,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3396131",
         "origin": "domestic",
         "km_driven": 0,
@@ -3767,6 +4027,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3306371",
         "origin": "imported",
         "km_driven": 0,
@@ -3784,6 +4045,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3391404",
         "origin": "domestic",
         "km_driven": 0,
@@ -3801,6 +4063,7 @@
     },
     {
         "name": "suzuki carry pro cánh dơi 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-canh-doi-2021-1799623",
         "origin": "imported",
         "km_driven": 0,
@@ -3818,6 +4081,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2009",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2009-4074730",
         "origin": "domestic",
         "km_driven": 65000,
@@ -3835,6 +4099,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3298646",
         "origin": "domestic",
         "km_driven": 0,
@@ -3852,6 +4117,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3448895",
         "origin": "imported",
         "km_driven": 0,
@@ -3869,6 +4135,7 @@
     },
     {
         "name": "suzuki super carry truck thùng kín 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-kin-2021-97069",
         "origin": "domestic",
         "km_driven": 0,
@@ -3879,13 +4146,14 @@
         "engine_capacity": 1.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 256000000,
+        "price": 252000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-1570629",
         "origin": "domestic",
         "km_driven": 0,
@@ -3903,6 +4171,7 @@
     },
     {
         "name": "suzuki carry pro 7 tạ 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-7-ta-2021-3880423",
         "origin": "imported",
         "km_driven": 0,
@@ -3920,6 +4189,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-2904749",
         "origin": "imported",
         "km_driven": 0,
@@ -3937,6 +4207,7 @@
     },
     {
         "name": "suzuki super carry truck ben 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-ben-2021-563174",
         "origin": "domestic",
         "km_driven": 0,
@@ -3947,13 +4218,14 @@
         "engine_capacity": 1.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 270000000,
+        "price": 266000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-1508142",
         "origin": "domestic",
         "km_driven": 0,
@@ -3971,6 +4243,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3181968",
         "origin": "domestic",
         "km_driven": 0,
@@ -3988,6 +4261,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-1570743",
         "origin": "domestic",
         "km_driven": 0,
@@ -4005,6 +4279,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3704094",
         "origin": "imported",
         "km_driven": 0,
@@ -4022,6 +4297,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3853317",
         "origin": "domestic",
         "km_driven": 0,
@@ -4042,6 +4318,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3448875",
         "origin": "imported",
         "km_driven": 0,
@@ -4059,6 +4336,7 @@
     },
     {
         "name": "suzuki carry băng ghế 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-bang-ghe-2021-1571351",
         "origin": "imported",
         "km_driven": 0,
@@ -4075,7 +4353,8 @@
         "brand": "suzuki"
     },
     {
-        "name": "suzuki carry pro 2021",
+        "name": "suzuki carry pro thùng mui 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3147841",
         "origin": "imported",
         "km_driven": 0,
@@ -4086,13 +4365,14 @@
         "engine_capacity": 1.5,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 315000000,
+        "price": 310000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-2808129",
         "origin": "imported",
         "km_driven": 0,
@@ -4110,6 +4390,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3080492",
         "origin": "imported",
         "km_driven": 0,
@@ -4127,6 +4408,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3220312",
         "origin": "imported",
         "km_driven": 0,
@@ -4144,6 +4426,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt ben 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-ben-2021-1570896",
         "origin": "domestic",
         "km_driven": 0,
@@ -4161,6 +4444,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2008",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2008-4072932",
         "origin": "domestic",
         "km_driven": 68000,
@@ -4178,6 +4462,7 @@
     },
     {
         "name": "suzuki super carry truck thùng kín 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-kin-2021-3273349",
         "origin": "domestic",
         "km_driven": 0,
@@ -4195,6 +4480,7 @@
     },
     {
         "name": "suzuki carry pro 2015",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2015-4163054",
         "origin": "imported",
         "km_driven": 80000,
@@ -4205,13 +4491,14 @@
         "engine_capacity": 1.6,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 190000000,
+        "price": 195000000,
         "year": 2015,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-1799592",
         "origin": "imported",
         "km_driven": 0,
@@ -4229,6 +4516,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt mui bạt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-mui-bat-2021-1570804",
         "origin": "domestic",
         "km_driven": 0,
@@ -4246,6 +4534,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3298650",
         "origin": "domestic",
         "km_driven": 0,
@@ -4263,6 +4552,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3413173",
         "origin": "domestic",
         "km_driven": 0,
@@ -4280,6 +4570,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3298154",
         "origin": "imported",
         "km_driven": 0,
@@ -4297,6 +4588,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3841196",
         "origin": "imported",
         "km_driven": 0,
@@ -4314,6 +4606,7 @@
     },
     {
         "name": "suzuki carry pro thùng kín 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-thung-kin-2021-3424193",
         "origin": "imported",
         "km_driven": 0,
@@ -4331,6 +4624,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-2813199",
         "origin": "imported",
         "km_driven": 0,
@@ -4341,13 +4635,14 @@
         "engine_capacity": 1.5,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 290000000,
+        "price": 284000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3391410",
         "origin": "imported",
         "km_driven": 0,
@@ -4365,6 +4660,7 @@
     },
     {
         "name": "suzuki super carry truck thùng ben 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-ben-2021-3278405",
         "origin": "domestic",
         "km_driven": 0,
@@ -4382,6 +4678,7 @@
     },
     {
         "name": "suzuki carry pro thùng lửng 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-thung-lung-2021-3273191",
         "origin": "imported",
         "km_driven": 0,
@@ -4399,6 +4696,7 @@
     },
     {
         "name": "suzuki super carry truck thùng kín 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-kin-2021-1360357",
         "origin": "domestic",
         "km_driven": 0,
@@ -4409,13 +4707,14 @@
         "engine_capacity": 1.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 256000000,
+        "price": 252000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki super carry truck thùng mui bạt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-mui-bat-2021-1140846",
         "origin": "domestic",
         "km_driven": 0,
@@ -4426,13 +4725,14 @@
         "engine_capacity": 1.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 256000000,
+        "price": 208000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
-        "name": "suzuki carry pro 2021",
+        "name": "suzuki carry pro thùng kín 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-2824465",
         "origin": "imported",
         "km_driven": 0,
@@ -4443,13 +4743,14 @@
         "engine_capacity": 1.5,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 317000000,
+        "price": 312000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki super carry truck ben 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-ben-2021-135084",
         "origin": "domestic",
         "km_driven": 0,
@@ -4460,7 +4761,7 @@
         "engine_capacity": 1.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 270000000,
+        "price": 266000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
@@ -4470,6 +4771,7 @@
     },
     {
         "name": "suzuki super carry truck thùng cánh dơi 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-canh-doi-2021-1185796",
         "origin": "domestic",
         "km_driven": 0,
@@ -4480,13 +4782,14 @@
         "engine_capacity": 1.0,
         "transmission": "manual",
         "wheel_drive": "RWD",
-        "price": 256000000,
+        "price": 252000000,
         "year": 2021,
         "type": "truck",
         "brand": "suzuki"
     },
     {
         "name": "suzuki carry pro 2019",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2019-4137098",
         "origin": "imported",
         "km_driven": 26086,
@@ -4504,6 +4807,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2009",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2009-4162820",
         "origin": "domestic",
         "km_driven": 0,
@@ -4521,6 +4825,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3857653",
         "origin": "domestic",
         "km_driven": 0,
@@ -4538,6 +4843,7 @@
     },
     {
         "name": "suzuki carry pro thùng kín 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-thung-kin-2021-3857504",
         "origin": "imported",
         "km_driven": 0,
@@ -4555,6 +4861,7 @@
     },
     {
         "name": "suzuki super carry truck thùng composite 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-composite-2021-3857676",
         "origin": "domestic",
         "km_driven": 0,
@@ -4572,6 +4879,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-4148795",
         "origin": "imported",
         "km_driven": 0,
@@ -4589,6 +4897,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3857690",
         "origin": "domestic",
         "km_driven": 0,
@@ -4609,6 +4918,7 @@
     },
     {
         "name": "suzuki carry pro mui bạt 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-mui-bat-2021-3857507",
         "origin": "imported",
         "km_driven": 0,
@@ -4626,6 +4936,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3857407",
         "origin": "imported",
         "km_driven": 0,
@@ -4643,6 +4954,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-4051978",
         "origin": "domestic",
         "km_driven": 0,
@@ -4660,6 +4972,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4158965",
         "origin": "domestic",
         "km_driven": 0,
@@ -4677,6 +4990,7 @@
     },
     {
         "name": "suzuki carry pro thùng composite 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-thung-composite-2021-3857431",
         "origin": "imported",
         "km_driven": 0,
@@ -4694,6 +5008,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2006",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2006-4158781",
         "origin": "domestic",
         "km_driven": 0,
@@ -4711,6 +5026,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2008",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2008-4158488",
         "origin": "domestic",
         "km_driven": 0,
@@ -4728,6 +5044,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3998686",
         "origin": "imported",
         "km_driven": 0,
@@ -4745,6 +5062,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2010",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2010-4151797",
         "origin": "domestic",
         "km_driven": 0,
@@ -4762,6 +5080,7 @@
     },
     {
         "name": "suzuki carry pro 2013",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2013-4148978",
         "origin": "imported",
         "km_driven": 0,
@@ -4779,6 +5098,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-78503",
         "origin": "domestic",
         "km_driven": 0,
@@ -4796,6 +5116,7 @@
     },
     {
         "name": "suzuki carry pro 2013",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2013-4146943",
         "origin": "imported",
         "km_driven": 0,
@@ -4813,6 +5134,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4146408",
         "origin": "domestic",
         "km_driven": 0,
@@ -4830,6 +5152,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2005",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2005-4143145",
         "origin": "domestic",
         "km_driven": 100000,
@@ -4847,6 +5170,7 @@
     },
     {
         "name": "suzuki carry pro 2018",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2018-4138882",
         "origin": "imported",
         "km_driven": 0,
@@ -4864,6 +5188,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2002",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2002-4135970",
         "origin": "domestic",
         "km_driven": 0,
@@ -4881,6 +5206,7 @@
     },
     {
         "name": "suzuki super carry truck thùng ben 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-thung-ben-2021-4096467",
         "origin": "domestic",
         "km_driven": 0,
@@ -4898,6 +5224,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2011",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2011-4131162",
         "origin": "domestic",
         "km_driven": 0,
@@ -4915,6 +5242,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2018",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2018-4129766",
         "origin": "domestic",
         "km_driven": 50000,
@@ -4932,6 +5260,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3765451",
         "origin": "domestic",
         "km_driven": 0,
@@ -4949,6 +5278,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-4021057",
         "origin": "domestic",
         "km_driven": 0,
@@ -4966,6 +5296,7 @@
     },
     {
         "name": "suzuki carry pro 2018",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2018-4128037",
         "origin": "imported",
         "km_driven": 50000,
@@ -4983,6 +5314,7 @@
     },
     {
         "name": "suzuki carry pro 2011",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2011-4126384",
         "origin": "imported",
         "km_driven": 0,
@@ -5000,6 +5332,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2007",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2007-4125829",
         "origin": "domestic",
         "km_driven": 0,
@@ -5017,6 +5350,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-4125525",
         "origin": "imported",
         "km_driven": 0,
@@ -5034,6 +5368,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2020",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2020-4117667",
         "origin": "domestic",
         "km_driven": 0,
@@ -5051,6 +5386,7 @@
     },
     {
         "name": "suzuki carry pro 2013",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2013-4111667",
         "origin": "imported",
         "km_driven": 0,
@@ -5068,6 +5404,7 @@
     },
     {
         "name": "suzuki carry pro 2016",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2016-4102910",
         "origin": "imported",
         "km_driven": 0,
@@ -5085,6 +5422,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2015",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2015-4100064",
         "origin": "domestic",
         "km_driven": 0,
@@ -5102,6 +5440,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2008",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2008-4098801",
         "origin": "domestic",
         "km_driven": 30000,
@@ -5119,6 +5458,7 @@
     },
     {
         "name": "suzuki carry pro 2011",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2011-4098410",
         "origin": "imported",
         "km_driven": 0,
@@ -5136,6 +5476,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2007",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2007-4098260",
         "origin": "domestic",
         "km_driven": 80,
@@ -5153,6 +5494,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2014",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2014-4054468",
         "origin": "domestic",
         "km_driven": 0,
@@ -5170,6 +5512,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4093419",
         "origin": "domestic",
         "km_driven": 0,
@@ -5187,6 +5530,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2016",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2016-4092808",
         "origin": "domestic",
         "km_driven": 66,
@@ -5204,6 +5548,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4089837",
         "origin": "domestic",
         "km_driven": 0,
@@ -5221,6 +5566,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4087834",
         "origin": "domestic",
         "km_driven": 0,
@@ -5238,6 +5584,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2007",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2007-4087656",
         "origin": "domestic",
         "km_driven": 0,
@@ -5255,6 +5602,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4086171",
         "origin": "domestic",
         "km_driven": 0,
@@ -5275,6 +5623,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2017",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2017-4081298",
         "origin": "domestic",
         "km_driven": 0,
@@ -5292,6 +5641,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2001",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2001-4080843",
         "origin": "domestic",
         "km_driven": 0,
@@ -5309,6 +5659,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2003",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2003-4080544",
         "origin": "domestic",
         "km_driven": 0,
@@ -5326,6 +5677,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2009",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2009-4076853",
         "origin": "domestic",
         "km_driven": 123456,
@@ -5343,6 +5695,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2007",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2007-4075323",
         "origin": "domestic",
         "km_driven": 55000,
@@ -5360,6 +5713,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4074863",
         "origin": "domestic",
         "km_driven": 0,
@@ -5377,6 +5731,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4074032",
         "origin": "domestic",
         "km_driven": 0,
@@ -5394,6 +5749,7 @@
     },
     {
         "name": "suzuki carry pro 2010",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2010-4071034",
         "origin": "imported",
         "km_driven": 0,
@@ -5411,6 +5767,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2003",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2003-4070653",
         "origin": "domestic",
         "km_driven": 0,
@@ -5428,6 +5785,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2012",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2012-4070502",
         "origin": "domestic",
         "km_driven": 0,
@@ -5445,6 +5803,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2003",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2003-4067595",
         "origin": "domestic",
         "km_driven": 0,
@@ -5462,6 +5821,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2007",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2007-4067191",
         "origin": "domestic",
         "km_driven": 0,
@@ -5479,6 +5839,7 @@
     },
     {
         "name": "suzuki carry pro 2020",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2020-3512914",
         "origin": "imported",
         "km_driven": 0,
@@ -5496,6 +5857,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2010",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2010-4065468",
         "origin": "domestic",
         "km_driven": 0,
@@ -5513,6 +5875,7 @@
     },
     {
         "name": "suzuki carry pro 2015",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2015-4063444",
         "origin": "imported",
         "km_driven": 11720,
@@ -5530,6 +5893,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2015",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2015-4062081",
         "origin": "domestic",
         "km_driven": 0,
@@ -5547,6 +5911,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3704088",
         "origin": "imported",
         "km_driven": 0,
@@ -5564,6 +5929,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3704089",
         "origin": "domestic",
         "km_driven": 0,
@@ -5581,6 +5947,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2003",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2003-4056947",
         "origin": "domestic",
         "km_driven": 0,
@@ -5598,6 +5965,7 @@
     },
     {
         "name": "suzuki carry pro 2018",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2018-4055529",
         "origin": "imported",
         "km_driven": 31068,
@@ -5615,6 +5983,7 @@
     },
     {
         "name": "suzuki carry pro 2016",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2016-4055545",
         "origin": "imported",
         "km_driven": 50168,
@@ -5632,6 +6001,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2018",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2018-4054664",
         "origin": "domestic",
         "km_driven": 50000,
@@ -5649,6 +6019,7 @@
     },
     {
         "name": "suzuki carry pro 2017",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2017-3796293",
         "origin": "imported",
         "km_driven": 27086,
@@ -5666,6 +6037,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2007",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2007-4027286",
         "origin": "domestic",
         "km_driven": 0,
@@ -5683,6 +6055,7 @@
     },
     {
         "name": "suzuki carry pro 2016",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2016-4024603",
         "origin": "imported",
         "km_driven": 0,
@@ -5700,6 +6073,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2017",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2017-4021595",
         "origin": "domestic",
         "km_driven": 0,
@@ -5717,6 +6091,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2001",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2001-4021526",
         "origin": "domestic",
         "km_driven": 0,
@@ -5734,6 +6109,7 @@
     },
     {
         "name": "suzuki carry pro 2018",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2018-4020044",
         "origin": "imported",
         "km_driven": 52800,
@@ -5751,6 +6127,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3423964",
         "origin": "imported",
         "km_driven": 0,
@@ -5768,6 +6145,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2010",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2010-4019079",
         "origin": "domestic",
         "km_driven": 0,
@@ -5785,6 +6163,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2008",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2008-4017787",
         "origin": "domestic",
         "km_driven": 0,
@@ -5802,6 +6181,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2017",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2017-4017713",
         "origin": "domestic",
         "km_driven": 44000,
@@ -5819,6 +6199,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3450833",
         "origin": "domestic",
         "km_driven": 0,
@@ -5836,6 +6217,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2003",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2003-4014132",
         "origin": "domestic",
         "km_driven": 0,
@@ -5853,6 +6235,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3448886",
         "origin": "domestic",
         "km_driven": 0,
@@ -5870,6 +6253,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2012",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2012-4011584",
         "origin": "domestic",
         "km_driven": 0,
@@ -5887,6 +6271,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2011",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2011-4010630",
         "origin": "domestic",
         "km_driven": 0,
@@ -5904,6 +6289,7 @@
     },
     {
         "name": "suzuki carry pro 2016",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2016-4009234",
         "origin": "imported",
         "km_driven": 0,
@@ -5921,6 +6307,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2007",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2007-4007586",
         "origin": "domestic",
         "km_driven": 0,
@@ -5938,6 +6325,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2006",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2006-4007258",
         "origin": "domestic",
         "km_driven": 0,
@@ -5955,6 +6343,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2010",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2010-4005093",
         "origin": "domestic",
         "km_driven": 21,
@@ -5975,6 +6364,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2009",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2009-4002265",
         "origin": "domestic",
         "km_driven": 0,
@@ -5992,6 +6382,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2005",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2005-4000244",
         "origin": "domestic",
         "km_driven": 0,
@@ -6009,6 +6400,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2004",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2004-4000059",
         "origin": "domestic",
         "km_driven": 0,
@@ -6026,6 +6418,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2018",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2018-3991051",
         "origin": "domestic",
         "km_driven": 0,
@@ -6043,6 +6436,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2013",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2013-3989839",
         "origin": "domestic",
         "km_driven": 0,
@@ -6060,6 +6454,7 @@
     },
     {
         "name": "suzuki carry pro 2017",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2017-3989816",
         "origin": "imported",
         "km_driven": 0,
@@ -6077,6 +6472,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2011",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2011-3988687",
         "origin": "domestic",
         "km_driven": 0,
@@ -6094,6 +6490,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2011",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2011-3987236",
         "origin": "domestic",
         "km_driven": 0,
@@ -6111,6 +6508,7 @@
     },
     {
         "name": "suzuki carry pro 2018",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2018-3949913",
         "origin": "imported",
         "km_driven": 0,
@@ -6128,6 +6526,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3949900",
         "origin": "imported",
         "km_driven": 0,
@@ -6145,6 +6544,7 @@
     },
     {
         "name": "suzuki carry pro 2021",
+        "model": "Carry",
         "source_url": "https://bonbanh.com/xe-suzuki-carry-pro-2021-3949879",
         "origin": "imported",
         "km_driven": 0,
@@ -6162,6 +6562,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3911290",
         "origin": "domestic",
         "km_driven": 0,
@@ -6185,6 +6586,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3181960",
         "origin": "domestic",
         "km_driven": 0,
@@ -6202,6 +6604,7 @@
     },
     {
         "name": "suzuki super carry truck 1 0 mt 2021",
+        "model": "Super Carry Truck",
         "source_url": "https://bonbanh.com/xe-suzuki-super_carry_truck-1.0-mt-2021-3450812",
         "origin": "domestic",
         "km_driven": 0,
@@ -6587,7 +6990,50 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "dongben db1021 1 1 mt 2017",
+        "model": "DB1021",
         "source_url": "https://bonbanh.com/xe-dongben-db1021-1.1-mt-2017-4144144",
         "origin": "domestic",
         "km_driven": 0,
@@ -6617,6 +7063,7 @@
     },
     {
         "name": "dongben db1021 1 1 mt 2017",
+        "model": "DB1021",
         "source_url": "https://bonbanh.com/xe-dongben-db1021-1.1-mt-2017-4074964",
         "origin": "domestic",
         "km_driven": 0,
@@ -6649,6 +7096,7 @@
     },
     {
         "name": "dongben db1021 1 1 mt 2017",
+        "model": "DB1021",
         "source_url": "https://bonbanh.com/xe-dongben-db1021-1.1-mt-2017-4030681",
         "origin": "domestic",
         "km_driven": 0,
@@ -6839,7 +7287,14 @@
         "car_failed": null
     },
     {
+        "car_failed": null
+    },
+    {
+        "car_failed": null
+    },
+    {
         "name": "thaco frontier k250 2021",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-thaco-frontier-k250-2021-4020825",
         "origin": "domestic",
         "km_driven": 0,
@@ -6857,6 +7312,7 @@
     },
     {
         "name": "thaco frontier k200 2021",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-thaco-frontier-k200-2021-4020963",
         "origin": "domestic",
         "km_driven": 0,
@@ -6940,6 +7396,7 @@
     },
     {
         "name": "thaco auman c160 2021",
+        "model": "Auman",
         "source_url": "https://bonbanh.com/xe-thaco-auman-c160-2021-4138696",
         "origin": "domestic",
         "km_driven": 0,
@@ -6987,6 +7444,7 @@
     },
     {
         "name": "thaco towner 990 2021",
+        "model": "Towner",
         "source_url": "https://bonbanh.com/xe-thaco-towner-990-2021-4122007",
         "origin": "domestic",
         "km_driven": 0,
@@ -7298,6 +7756,7 @@
     },
     {
         "name": "thaco towner 800 2020",
+        "model": "Towner",
         "source_url": "https://bonbanh.com/xe-thaco-towner-800-2020-4067109",
         "origin": "domestic",
         "km_driven": 0,
@@ -7606,6 +8065,7 @@
     },
     {
         "name": "thaco forland fd900 2020",
+        "model": "Forland",
         "source_url": "https://bonbanh.com/xe-thaco-forland-fd900-2020-3313445",
         "origin": "domestic",
         "km_driven": 0,
@@ -7623,6 +8083,7 @@
     },
     {
         "name": "thaco ollin 500b e4 2020",
+        "model": "Ollin",
         "source_url": "https://bonbanh.com/xe-thaco-ollin-500b.e4-2020-3312137",
         "origin": "domestic",
         "km_driven": 0,
@@ -7640,6 +8101,7 @@
     },
     {
         "name": "thaco forland fd350 e4 2020",
+        "model": "Forland",
         "source_url": "https://bonbanh.com/xe-thaco-forland-fd350.e4-2020-3312131",
         "origin": "domestic",
         "km_driven": 0,
@@ -7657,6 +8119,7 @@
     },
     {
         "name": "thaco towner 990 2020",
+        "model": "Towner",
         "source_url": "https://bonbanh.com/xe-thaco-towner-990-2020-2909014",
         "origin": "domestic",
         "km_driven": 0,
@@ -7674,6 +8137,7 @@
     },
     {
         "name": "thaco towner 800 2020",
+        "model": "Towner",
         "source_url": "https://bonbanh.com/xe-thaco-towner-800-2020-2843274",
         "origin": "domestic",
         "km_driven": 0,
@@ -7691,6 +8155,7 @@
     },
     {
         "name": "thaco frontier k200",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-thaco-frontier-k200---eu4-2020-2925712",
         "origin": "domestic",
         "km_driven": 0,
@@ -7708,6 +8173,7 @@
     },
     {
         "name": "thaco ollin 350 eu4 2020",
+        "model": "Ollin",
         "source_url": "https://bonbanh.com/xe-thaco-ollin-350-eu4-2020-2846152",
         "origin": "domestic",
         "km_driven": 0,
@@ -7725,6 +8191,7 @@
     },
     {
         "name": "thaco auman c160e4 2020",
+        "model": "Auman",
         "source_url": "https://bonbanh.com/xe-thaco-auman-c160e4-2020-2845682",
         "origin": "domestic",
         "km_driven": 0,
@@ -7742,6 +8209,7 @@
     },
     {
         "name": "thaco foton m4 600 2020",
+        "model": "Foton",
         "source_url": "https://bonbanh.com/xe-thaco-foton-m4-600-2020-2843235",
         "origin": "domestic",
         "km_driven": 0,
@@ -7759,6 +8227,7 @@
     },
     {
         "name": "thaco frontier k200 thùng đông lạnh 2020",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-thaco-frontier-k200-thung-dong-lanh-2020-2926299",
         "origin": "domestic",
         "km_driven": 0,
@@ -7776,6 +8245,7 @@
     },
     {
         "name": "thaco forland fd900 e4 2020",
+        "model": "Forland",
         "source_url": "https://bonbanh.com/xe-thaco-forland-fd900.e4-2020-2933253",
         "origin": "domestic",
         "km_driven": 0,
@@ -7793,6 +8263,7 @@
     },
     {
         "name": "thaco frontier k250 2020",
+        "model": "Frontier",
         "source_url": "https://bonbanh.com/xe-thaco-frontier-k250-2020-2909158",
         "origin": "domestic",
         "km_driven": 0,
@@ -7810,6 +8281,7 @@
     },
     {
         "name": "thaco ollin 700e4 2020",
+        "model": "Ollin",
         "source_url": "https://bonbanh.com/xe-thaco-ollin-700e4-2020-2869091",
         "origin": "domestic",
         "km_driven": 0,
@@ -7827,6 +8299,7 @@
     },
     {
         "name": "thaco towner 990 2020",
+        "model": "Towner",
         "source_url": "https://bonbanh.com/xe-thaco-towner-990-2020-2928482",
         "origin": "domestic",
         "km_driven": 0,
@@ -7841,27 +8314,6 @@
         "year": 2020,
         "type": "truck",
         "brand": "thaco"
-    },
-    {
-        "car_failed": null
-    },
-    {
-        "car_failed": null
-    },
-    {
-        "car_failed": null
-    },
-    {
-        "car_failed": null
-    },
-    {
-        "car_failed": null
-    },
-    {
-        "car_failed": null
-    },
-    {
-        "car_failed": null
     },
     {
         "car_failed": null
